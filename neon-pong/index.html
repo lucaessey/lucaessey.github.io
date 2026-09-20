@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#101b1d" />
+    <meta name="description" content="A little rivalry. A lot of replay. A pocket-sized neon arcade, ready to play offline." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <title>Neon Pong · One more rally</title>
+    <script type="module" crossorigin src="./assets/index-BKwA7zSb.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DwglJ65B.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="Neon Pong home"><span class="brand-mark" aria-hidden="true"><i></i><b></b><i></i></span> NEON<span class="brand-light">PONG</span><span class="edition">01</span></a>
+        <nav aria-label="Game options">
+          <button id="sound" class="utility" aria-pressed="false"><span aria-hidden="true">♫</span> <span id="sound-label">Sound on</span></button>
+          <button id="install" class="utility" aria-label="Install"><span aria-hidden="true">↧</span> <span>Install</span></button>
+          <button id="settings" class="utility" aria-label="Settings"><span aria-hidden="true">⚙</span> <span>Settings</span></button>
+        </nav>
+      </header>
+
+      <main>
+        <div class="intro"><div><p class="eyebrow">THE CLASSIC. AFTER HOURS.</p><h1>Keep the rally alive<span>.</span></h1></div><span class="arcade-label"><span class="status-dot"></span> SINGLE PLAYER ARCADE</span></div>
+        <section class="game-panel" aria-label="Neon Pong game">
+          <div class="scoreboard" aria-label="Score">
+            <div class="score-side player"><span class="side-name"><i></i> YOU</span><strong id="player-score">00</strong></div>
+            <div class="match-meta"><span class="target-label">FIRST TO 11 <span class="meta-separator">/</span> <span id="difficulty-label">MEDIUM</span></span><span id="match-status">YOUR NEXT FIVE-MINUTE BREAK</span></div>
+            <div class="score-side computer"><strong id="computer-score">00</strong><span class="side-name">CPU <i></i></span></div>
+          </div>
+
+          <div class="play-layout">
+            <div class="court-wrap" id="court-wrap" data-phase="menu">
+              <canvas id="court" width="960" height="540" role="img" aria-label="Pong court. You control the green left paddle. Scores and game status appear above."></canvas>
+              <div id="screen" class="screen">
+                <div class="screen-content">
+                  <p id="screen-kicker" class="eyebrow">NO QUARTERS NEEDED</p>
+                  <h2 id="screen-title">Meet your match.</h2>
+                  <p id="screen-description">You. The computer. First to eleven.</p>
+                  <button id="primary-action" class="primary">Let's play <span aria-hidden="true">↗</span></button>
+                </div>
+              </div>
+              <div id="countdown" class="countdown" hidden aria-hidden="true"><span>GET READY</span><strong>3</strong></div>
+              <span class="court-corner left-corner" aria-hidden="true">P1</span><span class="court-corner right-corner" aria-hidden="true">CPU</span>
+            </div>
+            <div id="touch-pad" class="touch-pad" role="group" aria-label="Touch paddle control" aria-describedby="touch-help">
+              <div class="touch-track" aria-hidden="true"><span></span></div>
+              <div><span class="touch-arrows" aria-hidden="true">↕</span><strong>Slide to move</strong><span id="touch-help">Anywhere here. You’re the green paddle.</span></div>
+            </div>
+          </div>
+
+          <div class="game-toolbar"><p id="control-hint"><kbd>W</kbd> <kbd>S</kbd> <span>or</span> <kbd>↑</kbd> <kbd>↓</kbd> <span>to move</span></p><p class="rally-label" id="rally-label">FIND YOUR ANGLE.</p><button id="pause" class="utility" disabled><span aria-hidden="true">Ⅱ</span> Pause <kbd>P</kbd></button></div>
+        </section>
+
+        <div class="below-court"><p><span class="tiny-cross" aria-hidden="true">✳</span> Hit with the paddle’s edge. Change the angle.</p><span class="offline-state" id="offline-status" role="status">Preparing offline play…</span></div>
+        <div id="update-banner" class="update-banner" hidden role="status"><span id="update-message">A fresh version is ready.</span><button class="utility" id="update">Update now</button></div>
+        <footer><span>BUILT FOR ONE MORE ROUND.</span><span>NO LOGINS. JUST PONG. <b aria-hidden="true">↗</b></span></footer>
+      </main>
+    </div>
+    <p id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+    <dialog id="settings-dialog" aria-labelledby="settings-title">
+      <p class="eyebrow">SET YOUR PACE</p><h2 id="settings-title">A worthy opponent.</h2>
+      <fieldset id="difficulty-options"><legend>Computer difficulty</legend>
+        <label><input type="radio" name="difficulty" value="easy" /><span><strong>Easy</strong><small>Room to find your rhythm.</small></span><span class="level-bars" aria-hidden="true">Ⅰ</span></label>
+        <label><input type="radio" name="difficulty" value="medium" checked /><span><strong>Medium</strong><small>A little friendly competition.</small></span><span class="level-bars" aria-hidden="true">Ⅱ</span></label>
+        <label><input type="radio" name="difficulty" value="hard" /><span><strong>Hard</strong><small>Make every angle count.</small></span><span class="level-bars" aria-hidden="true">Ⅲ</span></label>
+        <label><input type="radio" name="difficulty" value="impossible" /><span><strong>Impossible</strong><small>Fast reactions. Very little mercy.</small></span><span class="level-bars" aria-hidden="true">Ⅳ</span></label>
+      </fieldset>
+      <p class="dialog-note" id="difficulty-note">Changes apply to your next match.</p>
+      <button id="close-settings" class="primary">Done <span aria-hidden="true">↗</span></button>
+    </dialog>
+    <dialog id="install-dialog" aria-labelledby="install-title">
+      <p class="eyebrow">YOUR POCKET ARCADE</p><h2 id="install-title">Take the glow with you.</h2>
+      <p id="install-instructions"></p><p class="dialog-note">Open once online and wait for “Offline ready”. Then play wherever you are. No account needed.</p>
+      <button id="native-install" class="primary" hidden>Install Neon Pong <span aria-hidden="true">↧</span></button>
+      <button id="close-install" class="utility">Got it</button>
+    </dialog>
+    <noscript><p class="noscript">Neon Pong needs JavaScript to run. Enable it, then reload to play.</p></noscript>
+  </body>
+</html>
