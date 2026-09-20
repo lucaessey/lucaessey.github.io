@@ -1,6 +1,6 @@
 /* Replaced with a content revision and exact local asset list by Vite. */
-const CACHE = 'neon-pong-97f45780af3d51e4';
-const ASSETS = ["index.html","assets/index-BKwA7zSb.js","assets/index-DwglJ65B.css","favicon.svg","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","manifest.webmanifest"];
+const CACHE = 'neon-pong-f9fc3fe079aebde2';
+const ASSETS = ["index.html","assets/index-DwlSrizK.js","assets/index-DdvkoZEN.css","favicon.svg","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","manifest.webmanifest"];
 const absolute = path => new URL(path, self.registration.scope).href;
 
 self.addEventListener('install', event => {

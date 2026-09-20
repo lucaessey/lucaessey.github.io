@@ -11,8 +11,8 @@
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <title>Neon Pong · One more rally</title>
-    <script type="module" crossorigin src="./assets/index-BKwA7zSb.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DwglJ65B.css">
+    <script type="module" crossorigin src="./assets/index-DwlSrizK.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DdvkoZEN.css">
   </head>
   <body>
     <div class="app-shell">
@@ -22,12 +22,13 @@
           <button id="sound" class="utility" aria-pressed="false"><span aria-hidden="true">♫</span> <span id="sound-label">Sound on</span></button>
           <button id="install" class="utility" aria-label="Install"><span aria-hidden="true">↧</span> <span>Install</span></button>
           <button id="settings" class="utility" aria-label="Settings"><span aria-hidden="true">⚙</span> <span>Settings</span></button>
+          <button id="fullscreen" class="utility" aria-label="Full screen" title="Full screen" aria-controls="game-panel" aria-expanded="false"><span aria-hidden="true">⛶</span> <span>Full screen</span></button>
         </nav>
       </header>
 
       <main>
         <div class="intro"><div><p class="eyebrow">THE CLASSIC. AFTER HOURS.</p><h1>Keep the rally alive<span>.</span></h1></div><span class="arcade-label"><span class="status-dot"></span> SINGLE PLAYER ARCADE</span></div>
-        <section class="game-panel" aria-label="Neon Pong game">
+        <section id="game-panel" class="game-panel" aria-label="Neon Pong game">
           <div class="scoreboard" aria-label="Score">
             <div class="score-side player"><span class="side-name"><i></i> YOU</span><strong id="player-score">00</strong></div>
             <div class="match-meta"><span class="target-label">FIRST TO 11 <span class="meta-separator">/</span> <span id="difficulty-label">MEDIUM</span></span><span id="match-status">YOUR NEXT FIVE-MINUTE BREAK</span></div>
@@ -36,7 +37,7 @@
 
           <div class="play-layout">
             <div class="court-wrap" id="court-wrap" data-phase="menu">
-              <canvas id="court" width="960" height="540" role="img" aria-label="Pong court. You control the green left paddle. Scores and game status appear above."></canvas>
+              <canvas id="court" width="960" height="540" role="img" aria-label="Pong court. You control the green left paddle. Drag anywhere on the court to move to that height. Scores and game status appear above."></canvas>
               <div id="screen" class="screen">
                 <div class="screen-content">
                   <p id="screen-kicker" class="eyebrow">NO QUARTERS NEEDED</p>
@@ -54,7 +55,9 @@
             </div>
           </div>
 
-          <div class="game-toolbar"><p id="control-hint"><kbd>W</kbd> <kbd>S</kbd> <span>or</span> <kbd>↑</kbd> <kbd>↓</kbd> <span>to move</span></p><p class="rally-label" id="rally-label">FIND YOUR ANGLE.</p><button id="pause" class="utility" disabled><span aria-hidden="true">Ⅱ</span> Pause <kbd>P</kbd></button></div>
+          <div class="game-toolbar"><p id="control-hint"><kbd>W</kbd> <kbd>S</kbd> <span>or</span> <kbd>↑</kbd> <kbd>↓</kbd> <span>to move</span></p><p id="court-touch-hint">Drag on the court to move.<span>Try the right side to keep your paddle clear.</span></p><p class="rally-label" id="rally-label">FIND YOUR ANGLE.</p><div class="play-actions"><button id="exit-fullscreen" class="utility" hidden><span aria-hidden="true">⛶</span> Exit full screen</button><button id="pause" class="utility" disabled><span aria-hidden="true">Ⅱ</span> Pause <kbd>P</kbd></button></div></div>
+          <p id="fullscreen-status" class="fullscreen-status" role="status"></p>
+          <p id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></p>
         </section>
 
         <div class="below-court"><p><span class="tiny-cross" aria-hidden="true">✳</span> Hit with the paddle’s edge. Change the angle.</p><span class="offline-state" id="offline-status" role="status">Preparing offline play…</span></div>
@@ -62,7 +65,6 @@
         <footer><span>BUILT FOR ONE MORE ROUND.</span><span>NO LOGINS. JUST PONG. <b aria-hidden="true">↗</b></span></footer>
       </main>
     </div>
-    <p id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></p>
     <dialog id="settings-dialog" aria-labelledby="settings-title">
       <p class="eyebrow">SET YOUR PACE</p><h2 id="settings-title">A worthy opponent.</h2>
       <fieldset id="difficulty-options"><legend>Computer difficulty</legend>
