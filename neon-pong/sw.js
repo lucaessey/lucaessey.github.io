@@ -1,6 +1,6 @@
 /* Replaced with a content revision and exact local asset list by Vite. */
-const CACHE = 'neon-pong-f9fc3fe079aebde2';
-const ASSETS = ["index.html","assets/index-DwlSrizK.js","assets/index-DdvkoZEN.css","favicon.svg","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","manifest.webmanifest"];
+const CACHE = 'neon-pong-f58d9391423af509';
+const ASSETS = ["index.html","assets/index-Bdj6vABu.js","assets/index-Dz2fy39K.css","favicon.svg","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","manifest.webmanifest"];
 const absolute = path => new URL(path, self.registration.scope).href;
 
 self.addEventListener('install', event => {
@@ -21,7 +21,10 @@ self.addEventListener('activate', event => {
 });
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
-  if (event.request.method !== 'GET' || !url.href.startsWith(self.registration.scope)) return;
+  // Firebase auth/database and other cross-origin requests go directly to the network.
+  if (event.request.method !== 'GET' || url.origin !== self.location.origin || !url.href.startsWith(self.registration.scope)) return;
+  // Optional online/Firebase chunks are published but neither intercepted nor cached.
+  if (event.request.mode !== 'navigate' && !ASSETS.some(path => absolute(path) === url.href)) return;
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
     if (event.request.mode === 'navigate') return (await cache.match(absolute('index.html'))) || fetch(event.request);

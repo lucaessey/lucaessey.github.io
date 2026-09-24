@@ -11,8 +11,8 @@
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <title>Neon Pong · One more rally</title>
-    <script type="module" crossorigin src="./assets/index-DwlSrizK.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DdvkoZEN.css">
+    <script type="module" crossorigin src="./assets/index-Bdj6vABu.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Dz2fy39K.css">
   </head>
   <body>
     <div class="app-shell">
@@ -44,6 +44,7 @@
                   <h2 id="screen-title">Meet your match.</h2>
                   <p id="screen-description">You. The computer. First to eleven.</p>
                   <button id="primary-action" class="primary">Let's play <span aria-hidden="true">↗</span></button>
+                  <div class="challenge-actions"><button id="challenge-open" class="utility challenge-entry">Challenge a friend</button><button id="challenge-enter" class="utility challenge-entry">Enter challenge code</button></div>
                 </div>
               </div>
               <div id="countdown" class="countdown" hidden aria-hidden="true"><span>GET READY</span><strong>3</strong></div>
@@ -58,6 +59,24 @@
           <div class="game-toolbar"><p id="control-hint"><kbd>W</kbd> <kbd>S</kbd> <span>or</span> <kbd>↑</kbd> <kbd>↓</kbd> <span>to move</span></p><p id="court-touch-hint">Drag on the court to move.<span>Try the right side to keep your paddle clear.</span></p><p class="rally-label" id="rally-label">FIND YOUR ANGLE.</p><div class="play-actions"><button id="exit-fullscreen" class="utility" hidden><span aria-hidden="true">⛶</span> Exit full screen</button><button id="pause" class="utility" disabled><span aria-hidden="true">Ⅱ</span> Pause <kbd>P</kbd></button></div></div>
           <p id="fullscreen-status" class="fullscreen-status" role="status"></p>
           <p id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+          <dialog id="challenge-dialog" aria-labelledby="challenge-title">
+            <p class="eyebrow">A LITTLE FRIENDLY RIVALRY · ONLINE</p><h2 id="challenge-title">Challenge a friend.</h2>
+            <p>Identical setup and opponent tuning. Your inputs shape the rally.</p>
+            <label class="challenge-field">Your display name<input id="challenge-name" maxlength="12" autocomplete="nickname" placeholder="1–12 characters" /></label>
+            <p class="dialog-note">Link holders can see your name and result. No account signup.</p>
+            <div class="challenge-create-row"><label class="challenge-field">Difficulty<select id="challenge-difficulty"><option value="easy">Easy</option><option value="medium" selected>Medium</option><option value="hard">Hard</option><option value="impossible">Impossible</option></select></label><button id="challenge-create" class="utility">Create challenge</button></div>
+            <div class="challenge-create-row"><label class="challenge-field">Have a code?<input id="challenge-code" maxlength="6" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="ABC234" /></label><button id="challenge-load" class="utility">Load challenge</button></div>
+            <p id="challenge-status" role="status" aria-live="polite">Online only. Single-player is always available offline.</p>
+            <section id="challenge-details" hidden aria-labelledby="challenge-heading">
+              <h3 id="challenge-heading"></h3><p class="challenge-code-display">CODE <strong id="challenge-short-code"></strong></p>
+              <label class="challenge-field">Share link<input id="challenge-link" readonly /></label><button id="challenge-copy" class="utility">Copy link</button><button id="challenge-play" class="primary">Play challenge ↗</button>
+              <label id="challenge-opponent-label" class="challenge-field" hidden>Compare with<select id="challenge-opponent"></select></label>
+              <h3 id="challenge-verdict"></h3><div id="challenge-comparison"></div>
+              <p class="dialog-note">Beat the CPU to rank above a loss. Two wins: faster time, then longest rally. Two losses: higher score, then longest rally. Equal criteria draw. Time excludes pauses and serve countdowns.</p>
+              <button id="challenge-refresh" class="utility">Refresh results</button>
+            </section>
+            <button id="challenge-retry" class="primary" hidden>Retry saved result</button><button id="challenge-close" class="utility">Back to game</button>
+          </dialog>
         </section>
 
         <div class="below-court"><p><span class="tiny-cross" aria-hidden="true">✳</span> Hit with the paddle’s edge. Change the angle.</p><span class="offline-state" id="offline-status" role="status">Preparing offline play…</span></div>
