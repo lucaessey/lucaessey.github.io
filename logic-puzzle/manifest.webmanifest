@@ -1,0 +1,30 @@
+{
+  "id": "/logic-puzzle/",
+  "name": "Mystery Grids — The Deduction Casebook",
+  "short_name": "Mystery Grids",
+  "description": "Investigate, deduce, and resolve. A complete offline mystery casebook.",
+  "start_url": "/logic-puzzle/",
+  "scope": "/logic-puzzle/",
+  "display": "standalone",
+  "background_color": "#f4f3ee",
+  "theme_color": "#243c50",
+  "lang": "en",
+  "categories": [
+    "games",
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "/logic-puzzle/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logic-puzzle/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
