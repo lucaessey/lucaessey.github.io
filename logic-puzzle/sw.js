@@ -1,6 +1,6 @@
 /* The production build replaces this manifest with every hashed application asset. */
-const BUILD = 'be58ef8e887f';
-const ASSETS = ["/logic-puzzle/assets/index-BtuIRzZb.js","/logic-puzzle/assets/index-CLB9Dj8f.css","/logic-puzzle/favicon.svg","/logic-puzzle/file.svg","/logic-puzzle/globe.svg","/logic-puzzle/icons/icon-192.png","/logic-puzzle/icons/icon-512.png","/logic-puzzle/manifest.webmanifest","/logic-puzzle/window.svg"];
+const BUILD = '13a0ea21bfae';
+const ASSETS = ["/logic-puzzle/assets/index-BDse8SA1.js","/logic-puzzle/assets/index-BR0ELKnj.css","/logic-puzzle/favicon.svg","/logic-puzzle/file.svg","/logic-puzzle/globe.svg","/logic-puzzle/icons/icon-192.png","/logic-puzzle/icons/icon-512.png","/logic-puzzle/intros/murder-503861580d5a.mp3","/logic-puzzle/intros/murder-503861580d5a.vtt","/logic-puzzle/intros/murder-784dfa541f69.mp3","/logic-puzzle/intros/murder-784dfa541f69.vtt","/logic-puzzle/intros/murder-a12bfc95c0c2.mp3","/logic-puzzle/intros/murder-a12bfc95c0c2.vtt","/logic-puzzle/intros/robbery-32f0dbbf2829.mp3","/logic-puzzle/intros/robbery-32f0dbbf2829.vtt","/logic-puzzle/intros/robbery-52171b3c5e35.mp3","/logic-puzzle/intros/robbery-52171b3c5e35.vtt","/logic-puzzle/intros/robbery-e5652723168b.mp3","/logic-puzzle/intros/robbery-e5652723168b.vtt","/logic-puzzle/intros/school-8cc00b233b35.mp3","/logic-puzzle/intros/school-8cc00b233b35.vtt","/logic-puzzle/intros/school-c70b71a885c3.mp3","/logic-puzzle/intros/school-c70b71a885c3.vtt","/logic-puzzle/intros/school-cf07d6f1c3d5.mp3","/logic-puzzle/intros/school-cf07d6f1c3d5.vtt","/logic-puzzle/manifest.webmanifest","/logic-puzzle/window.svg"];
 const SCOPE = new URL(self.registration.scope).pathname;
 const PREFIX = `mystery-grids-shell:${SCOPE}:`;
 const CACHE = `${PREFIX}${BUILD}`;
