@@ -6,8 +6,8 @@
   "start_url": "/logic-puzzle/",
   "scope": "/logic-puzzle/",
   "display": "standalone",
-  "background_color": "#f4f3ee",
-  "theme_color": "#243c50",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "lang": "en",
   "categories": [
     "games",

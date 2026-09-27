@@ -1,6 +1,6 @@
 /* The production build replaces this manifest with every hashed application asset. */
-const BUILD = '1b250045bdea';
-const ASSETS = ["/logic-puzzle/assets/index-BBIHQpTU.js","/logic-puzzle/assets/index-Cn75i3PE.css","/logic-puzzle/favicon.svg","/logic-puzzle/file.svg","/logic-puzzle/globe.svg","/logic-puzzle/icons/icon-192.png","/logic-puzzle/icons/icon-512.png","/logic-puzzle/manifest.webmanifest","/logic-puzzle/window.svg"];
+const BUILD = 'd76d005735c1';
+const ASSETS = ["/logic-puzzle/assets/index-Bw3GrP2s.js","/logic-puzzle/assets/index-CVBELfs1.css","/logic-puzzle/favicon.svg","/logic-puzzle/file.svg","/logic-puzzle/globe.svg","/logic-puzzle/icons/icon-192.png","/logic-puzzle/icons/icon-512.png","/logic-puzzle/manifest.webmanifest","/logic-puzzle/window.svg"];
 const SCOPE = new URL(self.registration.scope).pathname;
 const PREFIX = `mystery-grids-shell:${SCOPE}:`;
 const CACHE = `${PREFIX}${BUILD}`;
