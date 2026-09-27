@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>Update Mystery Grids</title>
+  <style>
+    body{margin:0;background:#000;color:#fff;font:18px/1.6 system-ui,sans-serif;display:grid;min-height:100dvh;place-items:center}
+    main{box-sizing:border-box;width:min(100%,38rem);padding:2rem}h1{font-size:1.8rem}button,a{color:#fff}
+    button{padding:.8rem 1.2rem;background:#111;border:1px solid #aaa;border-radius:.4rem;font:inherit;cursor:pointer}
+    button:disabled{opacity:.6}a{display:inline-block;margin-top:1rem}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Update Mystery Grids</h1>
+    <p>Your saved cases, notes, deductions, and downloaded stories stay on this device.</p>
+    <p id="status" role="status">Getting the latest game…</p>
+    <button id="retry" hidden>Retry update</button><br>
+    <a id="back" href="./">Return to the game</a>
+  </main>
+  <script type="module">
+    // This separate network page can escape older cache-first app shells.
+    const base = new URL("./", location.href);
+    const status = document.querySelector("#status"), retry = document.querySelector("#retry");
+    function settled(worker, states) {
+      if (states.includes(worker.state)) return Promise.resolve();
+      return new Promise((resolve, reject) => {
+        const finish = error => { clearTimeout(timer); worker.removeEventListener("statechange", changed); error ? reject(error) : resolve(); };
+        const changed = () => {
+          if (states.includes(worker.state)) finish();
+          else if (worker.state === "redundant") finish(new Error("The update could not finish. Your saved game is unchanged."));
+        };
+        const timer = setTimeout(() => finish(new Error("The update timed out. Reconnect and retry; your saved game is unchanged.")), 60000);
+        worker.addEventListener("statechange", changed);
+      });
+    }
+    async function update() {
+      retry.hidden = true;
+      status.textContent = "Getting the latest game…";
+      try {
+        if (!navigator.onLine) throw new Error("You’re offline. Reconnect to update, or return to your saved game.");
+        if (!("serviceWorker" in navigator)) { location.replace(base.href); return; }
+        const registration = await navigator.serviceWorker.register(new URL("sw.js", base), { scope: base.pathname, updateViaCache: "none" });
+        await registration.update();
+        if (registration.installing) await settled(registration.installing, ["installed", "activated"]);
+        const worker = registration.waiting;
+        if (worker) {
+          status.textContent = "Opening the updated game. Your saved cases are kept.";
+          const active = settled(worker, ["activated"]);
+          worker.postMessage({ type: "ACTIVATE_UPDATE" });
+          await active;
+        }
+        location.replace(base.href);
+      } catch (error) {
+        status.textContent = `${error.message || "The update could not finish."} Your saved data has not been removed.`;
+        retry.hidden = false;
+      }
+    }
+    retry.addEventListener("click", update);
+    void update();
+  </script>
+</body>
+</html>
