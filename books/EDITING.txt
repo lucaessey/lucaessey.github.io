@@ -1,36 +1,31 @@
 FROM YIPS TO NERPS
+Story by Luca. A static illustrated comic and five-level Guess the Rock game.
 
-Story by Luca. This directory is a self-contained static website served at /books/.
-Only this directory was added to the existing GitHub Pages repository.
+EDITING THIS EDITION
+story.js: 8 chapters and 64 panels, narration, speech, labels and scene metadata.
+descriptions.js: plain-language descriptions for all 64 illustrations.
+reader.js: chapter navigation, progress, reading bookmarks, and enlargement.
+style.css: reader layout and editable lettering over illustrations.
+game.html, game-play.js, game-core.js, game.css: game controls, animation, and rules.
+transcript.html: complete standalone transcript that works without JavaScript.
 
-EDITING
-story.json contains all 64 panels in reading order: narration, dialogue, image
-descriptions, sound effects, and editable signs. Character names such as Stripe
-are descriptive accessibility labels, not new names spoken in the story.
-Yips speak only Yip. Nerps speak only Nerp. Gorf and narrator text is unrestricted.
+ART AND LETTERING
+assets/art/sheet-01.webp through sheet-16.webp are original generated sheets.
+Each has four equal scenes in a 2-by-2 grid, read left-to-right, then down.
+CSS selects each scene; speech and narration are selectable HTML text.
+assets/art/cover.webp, game-rock.webp, and game-yip.webp supply the cover/game.
+Original PNG artwork, prompts, design bible, build scripts and tests are saved
+in the Books workspace. Illustrations used the built-in image-generation tool.
+Self-hosted Bangers and Comic Neue fonts include SIL Open Font License files.
 
-The eight chapter-N.webp files are original generated chapter sheets.
-Each uses a uniform 2-column, 4-row grid, read left-to-right and top-to-bottom.
-The website displays each cell separately using CSS. No panel repeats another
-scene. Lettering is selectable HTML, never baked into the art.
+PUBLICATION
+GitHub Pages serves the main branch of lucaessey/lucaessey.github.io at root.
+This website lives entirely under /books/ and uses relative resource paths.
+Earlier edition files are retained for recoverability and are not loaded by
+the current reader. The earlier edition is also preserved in Git history.
+Old chapter/game bookmarks remain supported.
 
-After editing story.json, regenerate transcript.html from the same data using
-the supplied build-transcript.mjs in the complete source archive. The transcript
-works without JavaScript. Keep IDs 1-64 stable to preserve reading bookmarks.
-
-index.html: page structure and game controls.
-styles.css: layout, lettering, responsive rules, reduced-motion rules.
-app.js: chapter rendering, local reading bookmarks, artwork viewer.
-game-engine.js: difficulty settings and identity-based shuffle logic.
-game.js: game animation, input, feedback, retry, restart, and celebration.
-
-HOSTING
-All asset paths are relative to /books/. No build step, API keys, external
-services, or runtime packages are required. No audio or analytics are used.
-GitHub Pages publishes the main branch at repository root; pushing changes
-under books/ updates https://lucaessey.github.io/books/.
-
-ART AND FONTS
-Illustrations were created with the built-in image generation tool using the
-author's story and the included art-direction and scene briefs. Bangers and
-Comic Neue fonts are bundled with their SIL Open Font License files in assets/.
+Run npm test and npm run build in the Books source workspace before publishing.
+Regenerate transcript.html with tools/build.mjs after editing story.js.
+Copy the contents of site/ into the publishing checkout's books/ directory.
+Commit only books/ and push main. No hosted service or API key is required.

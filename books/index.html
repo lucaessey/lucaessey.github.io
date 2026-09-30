@@ -1,54 +1,49 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#291445">
-  <meta name="description" content="A peculiar planet. Five gloomy escapees. One very bad plan. Read From Yips to Nerps, an illustrated comic by Luca, and play Guess the Rock.">
-  <title>From Yips to Nerps · An illustrated comic</title>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="preload" href="./assets/bangers.ttf" as="font" type="font/ttf" crossorigin>
-  <script type="module" src="./app.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#38224c">
+  <meta name="description" content="Five Yips learn a new word and take a very strange trip. Read the illustrated comic From Yips to Nerps, then play Guess the Rock.">
+  <title>From Yips to Nerps — An illustrated comic</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preload" as="image" href="./assets/art/cover.webp">
+  <script type="module" src="./reader.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#comic">Skip to the comic</a>
-  <header class="topbar">
-    <a class="wordmark" href="#cover" aria-label="From Yips to Nerps, cover">YIP<span> / </span>NERP</a>
-    <nav aria-label="Main navigation"><a href="#comic">Comic</a><a href="#game">Guess the Rock</a><a href="./transcript.html">Transcript</a></nav>
+  <header class="masthead">
+    <a class="wordmark" href="#top" aria-label="From Yips to Nerps, cover">Y<span class="wordmark-slash">/</span>N</a>
+    <span class="masthead-note">A rather peculiar comic</span>
+    <a href="./game.html" class="header-game">Guess the Rock <span aria-hidden="true">◇</span></a>
   </header>
-  <main>
-    <section class="cover" id="cover" aria-labelledby="title">
-      <div class="cover-copy"><p class="eyebrow">A comic from the imagination of Luca</p><h1 id="title"><span>From Yips</span><span>to <em>Nerps.</em></span></h1><p class="cover-deck">One peculiar planet.<br>Five gloomy escapees.<br>A spectacularly bad plan.</p><div class="cover-actions"><a class="button primary" href="#comic">Read the Comic</a><a class="button secondary" href="#game">Play Guess the Rock</a></div><a id="continue" class="continue-link" href="#comic" hidden>Continue Reading</a><p class="edition">8 chapters <span>✦</span> 64 illustrated panels <span>✦</span> One word too many</p></div>
-      <div class="cover-art"><img src="./assets/cover.webp" alt="Five long-nosed, hooded Nerps beneath their enormous rock spaceship, with the purple-and-yellow world and a looming green Gorf behind them." width="1536" height="1536" fetchpriority="high"><span class="cover-sticker" aria-hidden="true">YIP!<br><i>…NERP.</i></span></div>
-    </section>
-    <div class="reading-tools" aria-label="Reading tools"><label for="chapters">Chapter</label><select id="chapters" aria-label="Jump to a chapter"><option value="flummoxprap">1 · Life on Flummoxprap</option><option value="gorfs">2 · The politest invasion</option><option value="away">3 · One new word</option><option value="plan">4 · A three-part plan</option><option value="japan">5 · Nothing unusual here</option><option value="elevator">6 · An impressive victory</option><option value="house">7 · The perfect house</option><option value="waiting">8 · The waiting room</option></select><span id="read-count">0 / 64</span><a href="#game">Play</a><progress id="read-progress" value="0" max="64" aria-label="Reading progress">0 of 64 panels</progress></div>
-    <details class="chapter-directory"><summary>Explore the eight chapters</summary><nav aria-label="Chapter jump links"><a href="#flummoxprap">01 · Life on Flummoxprap</a><a href="#gorfs">02 · The politest invasion</a><a href="#away">03 · One new word</a><a href="#plan">04 · A three-part plan</a><a href="#japan">05 · Nothing unusual here</a><a href="#elevator">06 · An impressive victory</a><a href="#house">07 · The perfect house</a><a href="#waiting">08 · The waiting room</a></nav></details>
-    <div id="comic" aria-label="The comic"><p class="loading-note">Opening the comic…</p></div>
-    <div class="endpaper"><p class="the-end">The end.</p><a class="button primary" href="#game">Play Guess the Rock</a><a class="text-link" href="./transcript.html">Read the text transcript</a></div>
-    <section class="game-section" id="game" aria-labelledby="game-title">
-      <div class="game-heading"><p class="eyebrow">A game from Flummoxprap</p><h2 id="game-title">Guess the Rock</h2><p>One Yip. Three rock houses. Keep your eye on the right one.</p></div>
-      <div class="game-card">
-        <div class="game-top"><span id="level-name">Level 1 · Very easy</span><ol class="level-dots" aria-label="Five difficulty levels"><li aria-current="step">1</li><li>2</li><li>3</li><li>4</li><li>5</li></ol></div>
-        <p class="game-status" id="game-status" role="status" aria-live="polite" aria-atomic="true">Watch the Yip enter a rock. Follow it through the shuffle.</p>
-        <div class="rock-stage" id="rock-stage" aria-label="Three rock houses">
-          <div class="stage-stars" aria-hidden="true">✦ · ✧</div>
-          <img class="game-yip" id="game-yip" src="./assets/yip.webp" alt="The smiling Yip" width="256" height="384">
-          <button class="rock" data-rock="0" aria-label="Choose the left rock" disabled><img src="./assets/rock.webp" alt="Gray rock house" width="400" height="300"></button>
-          <button class="rock" data-rock="1" aria-label="Choose the middle rock" disabled><img src="./assets/rock.webp" alt="Gray rock house" width="400" height="300"></button>
-          <button class="rock" data-rock="2" aria-label="Choose the right rock" disabled><img src="./assets/rock.webp" alt="Gray rock house" width="400" height="300"></button>
-          <div class="slot-labels" aria-hidden="true"><span>1</span><span>2</span><span>3</span></div>
+  <main id="top">
+    <section class="cover" aria-labelledby="book-title">
+      <div class="cover-copy">
+        <p class="eyebrow">A story from Flummoxprap</p>
+        <h1 id="book-title"><span>From</span> Yips <span>to</span> <strong>Nerps.</strong></h1>
+        <p class="cover-intro">Five little creatures.<br> One very unfortunate new word.</p>
+        <div class="cover-actions">
+          <a class="button primary" href="#comic">Read the Comic</a>
+          <a class="button secondary" href="./game.html">Play Guess the Rock</a>
+          <a class="continue-link" id="continue-reading" href="#comic" hidden>Continue Reading</a>
         </div>
-        <div class="game-controls"><button class="button primary" id="game-start">Start level 1</button><button class="button secondary" id="game-restart">Restart game</button><label class="slow-option"><input type="checkbox" id="slow-mode"> Slower practice</label></div>
-        <p class="game-help">Choose only when the shuffle stops. Tap, click, or press <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>. With a keyboard, you can also use Tab and Enter.</p>
-        <p class="motion-note" id="motion-note" hidden>Reduced motion is on. The rocks use gentle, straight swaps. Slower practice gives you more time to follow.</p>
       </div>
-      <a class="text-link return-reading" href="#comic">Back to the comic</a>
+      <div class="cover-illustration"><img src="./assets/art/cover.webp" alt="Five gloomy, long-nosed Nerps in purple and yellow robes, with their gray rock spaceship and strange purple-and-yellow home world." width="1536" height="1024" fetchpriority="high"><span class="cover-stamp">Yip?<br><b>Nerp.</b></span></div>
+      <div class="cover-footer"><span>Eight chapters · One strange journey</span><a href="#comic">Scroll to begin <span aria-hidden="true">↓</span></a></div>
     </section>
+    <nav class="reader-bar" aria-label="Comic navigation">
+      <details id="chapter-menu"><summary><span class="menu-icon" aria-hidden="true">☰</span><span id="current-chapter">Chapters</span><span aria-hidden="true">⌄</span></summary><ol id="chapter-links"></ol></details>
+      <div class="reader-tools"><span id="progress-label">0%</span><a href="#transcript">Transcript</a><a href="./game.html" aria-label="Play Guess the Rock">Play</a></div>
+      <div class="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+    </nav>
+    <div id="comic" aria-label="The complete comic"></div>
+    <div class="story-end"><p class="end-lettering">The end.</p><a class="button primary" href="./game.html">Play Guess the Rock</a><a class="quiet-link" href="#top">Back to the cover</a></div>
+    <section class="transcript-section" id="transcript"><details><summary>Read the text transcript <span aria-hidden="true">+</span></summary><div id="transcript-text"></div></details></section>
   </main>
-  <footer><a class="wordmark" href="#cover">YIP<span> / </span>NERP</a><p>Story by Luca · Original generated illustrations<br>From Yips to Nerps</p><a href="./transcript.html">Text transcript</a></footer>
-  <dialog id="art-dialog" aria-labelledby="art-title"><div class="dialog-toolbar"><h2 id="art-title">Panel artwork</h2><button id="close-art" aria-label="Close enlarged artwork">Close ✕</button></div><div id="enlarged-art"></div><p id="art-description"></p></dialog>
-  <noscript><p class="no-script">Read the complete story in the <a href="./transcript.html">text transcript</a>. The interactive comic and game need JavaScript.</p></noscript>
+  <footer class="site-footer"><span>From Yips to Nerps</span><span>Story by Luca · Original generated illustrations</span><a href="./game.html">Guess the Rock</a></footer>
+  <dialog id="art-dialog" aria-labelledby="art-dialog-title"><div class="dialog-toolbar"><h2 id="art-dialog-title">Panel artwork</h2><button type="button" id="close-art" aria-label="Close enlarged artwork">Close ×</button></div><div id="enlarged-panel"></div><p class="dialog-hint">Use Escape to close.</p></dialog>
+  <noscript><p class="noscript">Enable JavaScript to load the comic reader, or <a href="./transcript.html">read the full text transcript</a>.</p></noscript>
 </body>
 </html>
-
-

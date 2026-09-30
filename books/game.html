@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#38224c">
+  <meta name="description" content="Follow a shuffling Yip through five levels of Guess the Rock, the game from From Yips to Nerps.">
+  <title>Guess the Rock — From Yips to Nerps</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg"><link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./game.css">
+  <script type="module" src="./game-play.js"></script>
+</head>
+<body class="game-page">
+  <a class="skip-link" href="#game">Skip to game</a>
+  <header class="masthead"><a class="wordmark" href="./index.html" aria-label="From Yips to Nerps, cover">Y<span class="wordmark-slash">/</span>N</a><span class="masthead-note">A little game from Flummoxprap</span><a class="header-game" id="back-to-comic" href="./index.html">Back to the Comic</a></header>
+  <main id="game" class="game-main">
+    <div class="game-heading"><p class="eyebrow">Three houses. One very smiley resident.</p><h1>Guess the Rock</h1><p>Watch the Yip hide. Follow the rock. Pick its new home.</p></div>
+    <section class="game-board" aria-label="Guess the Rock game">
+      <div class="game-topline"><span id="level-title">Level 1 <span>Very easy</span></span><ol class="level-dots" aria-label="Five difficulty levels"><li aria-current="step" aria-label="Level 1, very easy">1</li><li aria-label="Level 2, easy">2</li><li aria-label="Level 3, medium">3</li><li aria-label="Level 4, hard">4</li><li aria-label="Level 5, very hard">5</li></ol></div>
+      <div class="game-message"><h2 id="game-status" role="status" aria-live="polite" aria-atomic="true">Keep an eye on this Yip.</h2><p id="game-detail">Ready? Start with a nice, slow shuffle.</p></div>
+      <div class="stage" id="stage" aria-label="Three gray rock houses">
+        <div class="stage-hills" aria-hidden="true"></div>
+        <div class="yip-token" id="yip-token"><img src="./assets/art/game-yip.webp" alt="A smiling Yip in a mustard robe, with a long nose, hidden eyes and bare toes."><span class="yip-word" aria-hidden="true">Yip!</span></div>
+        <div class="rocks" id="rocks">
+          <button class="rock" type="button" data-rock="0" aria-label="Rock in position 1" disabled style="left:2%"><img src="./assets/art/game-rock.webp" alt="Gray rock house" draggable="false"><span class="rock-reveal" hidden>Here!</span></button>
+          <button class="rock" type="button" data-rock="1" aria-label="Rock in position 2" disabled style="left:35%"><img src="./assets/art/game-rock.webp" alt="Gray rock house" draggable="false"><span class="rock-reveal" hidden>Here!</span></button>
+          <button class="rock" type="button" data-rock="2" aria-label="Rock in position 3" disabled style="left:68%"><img src="./assets/art/game-rock.webp" alt="Gray rock house" draggable="false"><span class="rock-reveal" hidden>Here!</span></button>
+        </div>
+        <div class="position-markers" aria-hidden="true"><span>1</span><span>2</span><span>3</span></div>
+        <div class="celebration" id="celebration" hidden aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span><span>✧</span><b>YIP! YIP! YIP!</b><span>✦</span><span>✧</span></div>
+      </div>
+      <div class="game-controls"><button type="button" class="button primary" id="round-action">Start Level 1</button><button type="button" class="restart-button" id="restart">Restart</button></div>
+      <p class="keyboard-hint" id="keyboard-hint">Choose with a click, a tap, or keys <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> after the shuffle.</p>
+    </section>
+    <div class="game-below"><label class="motion-option"><input type="checkbox" id="gentle-motion"> Gentler motion <span>Slower, level slides.</span></label><p>Five levels: very easy, easy, medium, hard, very hard.<br>A wrong guess? Retry the same level.</p></div>
+    <p class="game-comic-link">Wondering why everyone lives under a rock? <a href="./index.html#flummoxprap">Meet the Yips.</a></p>
+  </main>
+  <noscript><p class="noscript">Guess the Rock needs JavaScript. <a href="./transcript.html">Read the comic transcript instead.</a></p></noscript>
+</body>
+</html>
