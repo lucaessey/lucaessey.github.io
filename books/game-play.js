@@ -7,7 +7,7 @@ let animations=[];
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 motion.checked=reduced.matches;
 reduced.addEventListener('change',event=>{motion.checked=event.matches;});
-try { const saved=JSON.parse(localStorage.getItem('yips-nerps:reading:v1')); if(Number.isInteger(saved?.number)&&saved.number>=1&&saved.number<=64) $('#back-to-comic').href=`./index.html#panel-${saved.number}`; } catch {}
+try { const saved=JSON.parse(localStorage.getItem('yips-nerps:reading:v1')); if(Number.isInteger(saved?.number)&&saved.number>=1&&saved.number<=64) $('#back-to-comic').href=`./yips.html#panel-${saved.number}`; } catch {}
 
 function setMessage(title,detail){$('#game-status').textContent=title;$('#game-detail').textContent=detail;}
 function setSelection(enabled){rocks.forEach(rock=>{rock.disabled=!enabled;});$('#stage').classList.toggle('can-choose',enabled);}

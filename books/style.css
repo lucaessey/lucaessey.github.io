@@ -40,3 +40,5 @@
 .labels-52>span{left:47%;top:35%;width:43%;font:700 clamp(18px,2.8vw,34px)/1.15 Comic,'Trebuchet MS',sans-serif;transform:rotate(-11deg)}
 .labels-53>span{left:46%;top:61%;width:22%;font-size:clamp(14px,1.3vw,19px);transform:none}
 @media(max-width:600px){.reader-tools>a,.reader-tools>a:last-child{font-size:14px}.keyboard-hint{font-size:14px}}
+.masthead .shelf-link{display:inline-block;text-decoration:none;font-size:14px;white-space:nowrap}.masthead .shelf-link:hover{text-decoration:underline}
+@media(max-width:600px){.masthead{gap:15px}.masthead .shelf-link{font-size:12px}.header-game{font-size:12px}.header-game span{display:none}}

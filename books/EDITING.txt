@@ -1,5 +1,17 @@
-FROM YIPS TO NERPS
-Story by Luca. A static illustrated comic and five-level Guess the Rock game.
+LUCA'S BOOKS
+Two illustrated stories based on Luca's original work, plus Guess the Rock.
+
+THE BOOKSHELF
+index.html: homepage; hood card opens yips.html, bazooka card opens bazooka.html.
+yips.html: original From Yips to Nerps comic, unchanged story and 64 panels.
+bazooka.html: twelve-chapter expanded story, readable without JavaScript.
+library.css: homepage and long-form story layout.
+library.js: homepage reading links and compatibility with original comic URLs.
+book-reader.js: chapter menu and separately saved extended-story position.
+In the source workspace, edit source/bazooka-story.mjs, then run npm run build.
+tools/build-library.mjs regenerates index.html and bazooka.html.
+Original drawing: assets/art/bazooka-original.png.
+New illustrations: bazooka-icon.webp and bazooka-sheet-1.webp through -3.webp.
 
 EDITING THIS EDITION
 story.js: 8 chapters and 64 panels, narration, speech, labels and scene metadata.

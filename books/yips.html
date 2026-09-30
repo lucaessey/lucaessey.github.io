@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#38224c">
+  <meta name="description" content="Five Yips learn a new word and take a very strange trip. Read the illustrated comic From Yips to Nerps, then play Guess the Rock.">
+  <title>From Yips to Nerps — An illustrated comic</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preload" as="image" href="./assets/art/cover.webp">
+  <script type="module" src="./reader.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#comic">Skip to the comic</a>
+  <header class="masthead">
+    <a class="wordmark" href="#top" aria-label="From Yips to Nerps, cover">Y<span class="wordmark-slash">/</span>N</a>
+    <a class="masthead-note shelf-link" href="./index.html">← Bookshelf</a>
+    <a href="./game.html" class="header-game">Guess the Rock <span aria-hidden="true">◇</span></a>
+  </header>
+  <main id="top">
+    <section class="cover" aria-labelledby="book-title">
+      <div class="cover-copy">
+        <p class="eyebrow">A story from Flummoxprap</p>
+        <h1 id="book-title"><span>From</span> Yips <span>to</span> <strong>Nerps.</strong></h1>
+        <p class="cover-intro">Five little creatures.<br> One very unfortunate new word.</p>
+        <div class="cover-actions">
+          <a class="button primary" href="#comic">Read the Comic</a>
+          <a class="button secondary" href="./game.html">Play Guess the Rock</a>
+          <a class="continue-link" id="continue-reading" href="#comic" hidden>Continue Reading</a>
+        </div>
+      </div>
+      <div class="cover-illustration"><img src="./assets/art/cover.webp" alt="Five gloomy, long-nosed Nerps in purple and yellow robes, with their gray rock spaceship and strange purple-and-yellow home world." width="1536" height="1024" fetchpriority="high"><span class="cover-stamp">Yip?<br><b>Nerp.</b></span></div>
+      <div class="cover-footer"><span>Eight chapters · One strange journey</span><a href="#comic">Scroll to begin <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <nav class="reader-bar" aria-label="Comic navigation">
+      <details id="chapter-menu"><summary><span class="menu-icon" aria-hidden="true">☰</span><span id="current-chapter">Chapters</span><span aria-hidden="true">⌄</span></summary><ol id="chapter-links"></ol></details>
+      <div class="reader-tools"><span id="progress-label">0%</span><a href="#transcript">Transcript</a><a href="./game.html" aria-label="Play Guess the Rock">Play</a></div>
+      <div class="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+    </nav>
+    <div id="comic" aria-label="The complete comic"></div>
+    <div class="story-end"><p class="end-lettering">The end.</p><a class="button primary" href="./game.html">Play Guess the Rock</a><a class="button secondary" href="./bazooka.html">Read Three Shots & a Very Long Detour</a><a class="quiet-link" href="./index.html">Back to the bookshelf</a></div>
+    <section class="transcript-section" id="transcript"><details><summary>Read the text transcript <span aria-hidden="true">+</span></summary><div id="transcript-text"></div></details></section>
+  </main>
+  <footer class="site-footer"><a href="./index.html">← Luca’s Books</a><span>Story by Luca · Original generated illustrations</span><a href="./game.html">Guess the Rock</a></footer>
+  <dialog id="art-dialog" aria-labelledby="art-dialog-title"><div class="dialog-toolbar"><h2 id="art-dialog-title">Panel artwork</h2><button type="button" id="close-art" aria-label="Close enlarged artwork">Close ×</button></div><div id="enlarged-panel"></div><p class="dialog-hint">Use Escape to close.</p></dialog>
+  <noscript><p class="noscript">Enable JavaScript to load the comic reader, or <a href="./transcript.html">read the full text transcript</a>.</p></noscript>
+</body>
+</html>
