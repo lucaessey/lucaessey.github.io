@@ -1,0 +1,88 @@
+{
+  "title": "From Yips to Nerps",
+  "chapters": [
+    {"id":"flummoxprap","title":"Life on Flummoxprap","kicker":"A perfectly peculiar planet","panels":[
+      {"id":1,"wide":true,"caption":"Somewhere in the galaxy, on a purple-and-yellow planet called Flummoxprap, lived creatures unknown to the rest of the universe.","alt":"Purple-and-yellow Flummoxprap hangs in space, its hills dotted with little gray rocks."},
+      {"id":2,"caption":"They were the Yips. Their streets wound up hills, down hills, and around hills that probably did not need going around.","alt":"Smiling robed Yips shuffle along winding yellow streets through purple hills and gray rock homes.","dialogue":[{"speaker":"Yip","text":"Yip!"},{"speaker":"Another Yip","text":"Yip!"}]},
+      {"id":3,"caption":"Homes were rocks. Shops were rocks. The movie theater? Also a rock. On the busy streets, decorative banners helped everyone tell the rocks apart.","alt":"Gray boulder businesses line a busy purple-and-yellow street with decorative banners.","labels":["BROG & PLOOFIDONK","THE YIP PICTURE HOUSE"]},
+      {"id":4,"caption":"A Yip wore a long hooded robe. Only a long, drooping nose, a full toothy smile, and bare toes escaped it. The eyes stayed completely hidden in shadow.","alt":"Close view of a Yip with a drooping nose, a broad toothy grin, and complete darkness beneath the brow of the hood."},
+      {"id":5,"caption":"Walking was a rapid, inch-by-inch shuffle of toes. It was surprisingly efficient. It was not especially dignified.","alt":"Bare toes shuffle rapidly under long robe hems.","sfx":"shuffle shuffle shuffle"},
+      {"id":6,"caption":"Instead of water, they drank purple ploofidonk. They ate brog: a yellow substance shaped very much like a patty. Life had its essentials.","alt":"A smiling Yip raises a glass of purple ploofidonk beside a yellow brog patty."},
+      {"id":7,"caption":"Yips were musical creatures. They could greet, gossip, sing, and discuss lunch with one remarkably versatile word.","alt":"Five Yips with distinct purple-and-yellow robe markings enjoy brog together.","dialogue":[{"speaker":"Yip","text":"Yip?"},{"speaker":"Yip","text":"Yip!"},{"speaker":"Yip","text":"Yip, yip, yip!"}]},
+      {"id":8,"wide":true,"caption":"And so their peaceful little world went on. Yip after yip after yip.","alt":"A peaceful musical town of gray rocks settles into a purple-and-yellow sunset.","dialogue":[{"speaker":"Distant Yips singing","text":"Yip! Yip! Yip!"}]}
+    ]},
+    {"id":"gorfs","title":"The politest invasion","kicker":"An extremely inconvenient visit","panels":[
+      {"id":9,"wide":true,"caption":"Until one day, a lime-green spaceship arrived. It looked an awful lot like a blimp.","alt":"A lime-green blimp-shaped spaceship casts an enormous shadow over the rock town."},
+      {"id":10,"caption":"Out came the Gorfs: great, green, translucent blobs of gooey acid. They carried small orange weapons that looked suspiciously like water pistols.","alt":"A large green Gorf, with bubbles and distorted scenery visible through its gelatinous body, holds a tiny orange pistol in a gooey protrusion."},
+      {"id":11,"caption":"Their voices were low, scary, and very British. Their manners were impeccable.","alt":"The translucent Gorf leader leans courteously toward a tiny smiling Yip.","dialogue":[{"speaker":"Gorf leader","text":"Could you take me to your leader?"},{"speaker":"Yip","text":"Yip!"}]},
+      {"id":12,"caption":"The Yip shuffled toward the biggest Yip rock of all.","alt":"A Yip leads the enormous green Gorf up a winding street toward the largest gray rock."},
+      {"id":13,"caption":"The Gorf leader made a very respectful introduction.","alt":"Beneath the royal rock, the Gorf bows to the Yip leader on a purple-and-yellow throne.","dialogue":[{"speaker":"Gorf leader","text":"Good day, sir? Ma’am? Um… Royal Yip. Is there any way you would allow us to take over your planet?"}]},
+      {"id":14,"caption":"A small request. Practically a favor.","alt":"The Gorf leader gestures politely with a tiny orange weapon while the Yip leader listens.","dialogue":[{"speaker":"Gorf leader","text":"I really don’t want to be a bother. I just need to destroy anything and everything on Flummoxprap."}]},
+      {"id":15,"caption":"The Yip leader considered this with all the vocabulary at their disposal.","alt":"The Yip leader beams a completely oblivious toothy smile.","dialogue":[{"speaker":"Yip leader","text":"Yip."}]},
+      {"id":16,"wide":true,"caption":"So the Gorf went around town, checking with everyone individually. It was important to be polite.","alt":"The Gorf courteously visits smiling Yips along a street of gray rock homes.","dialogue":[{"speaker":"Gorf leader","text":"May I destroy you?"},{"speaker":"First Yip","text":"Yip!"},{"speaker":"Gorf leader","text":"May I destroy you?"},{"speaker":"Second Yip","text":"Yip!"},{"speaker":"Gorf leader","text":"May I destroy you?"},{"speaker":"Third Yip","text":"Yip!"}]}
+    ]},
+    {"id":"away","title":"One new word","kicker":"Five small objections","panels":[
+      {"id":17,"wide":true,"caption":"But five Yips had learned something new.","alt":"Five Yips with a stripe, violet hem, zigzag, shoulder patch, and three dots face the Gorf as their smiles disappear.","dialogue":[{"speaker":"Gorf leader","text":"May I destroy you?"},{"speaker":"Stripe","text":"Nerp."},{"speaker":"Hem","text":"Nerp."},{"speaker":"Zigzag","text":"Nerp."},{"speaker":"Patch","text":"Nerp."},{"speaker":"Dots","text":"Nerp."}]},
+      {"id":18,"caption":"From then on, those five were known as the Nerps. There were exactly five of them. Their enthusiasm had also left in a group.","alt":"The five gloomy Nerps stand shoulder to shoulder, refusing the towering translucent Gorf."},
+      {"id":19,"caption":"They looked much the same as Yips, except their mouths were now small, almost straight lines with a slight downward curve.","alt":"Close-up of the striped Nerp’s tiny downturned mouth, long nose, and shadow-hidden eyes.","dialogue":[{"speaker":"Nerp","text":"Nerp."}]},
+      {"id":20,"caption":"They shuffled straight to their own spaceship.","alt":"Exactly five marked Nerps hurry on bare toes toward an enormous gray rock.","sfx":"shuffle shuffle shuffle"},
+      {"id":21,"wide":true,"caption":"Their spaceship was, naturally, a comically oversized rock.","alt":"Five tiny Nerps climb a ramp into an absurdly large plain gray boulder spaceship."},
+      {"id":22,"caption":"The controls were reassuringly simple. Every button said “Yip”… except the big red one in the middle.","alt":"Purple-and-yellow controls surround a huge red central button.","labels":["Yip","Yip","Away","Yip","Yip"]},
+      {"id":23,"caption":"One Nerp pressed the button with the sticker that read “Away.”",
+       "alt":"The striped Nerp presses the giant red button while the other four brace themselves.","labels":["Away"],"dialogue":[{"speaker":"Nerp","text":"Nerp!"}]},
+      {"id":24,"wide":true,"caption":"And away they went.","alt":"The enormous gray rock spaceship blasts away from purple-and-yellow Flummoxprap."}
+    ]},
+    {"id":"plan","title":"A three-part plan","kicker":"Intelligence. Preparation. Foam.","panels":[
+      {"id":25,"wide":true,"caption":"The journey was long and quiet. Flummoxprap’s colors faded into the distance. The silence was occasionally interrupted by a grumbled…",
+       "alt":"A lonely gray rock travels through sweeping galaxies, with its home planet far behind.","dialogue":[{"speaker":"Inside the ship","text":"Nerp."}]},
+      {"id":26,"caption":"As Earth grew closer, so did their hope of a new home. The Nerps were gloomy, but very smart. They suspected they would not be welcome.","alt":"Five gloomy Nerps look through their cockpit window toward Earth."},
+      {"id":27,"caption":"They contrived a plan. A plan consisting of three things.","alt":"The five Nerps huddle over a plan with three parts.","dialogue":[{"speaker":"Nerp","text":"Nerp?"},{"speaker":"Nerp","text":"Nerp."},{"speaker":"Nerp","text":"Nerp!"}]},
+      {"id":28,"caption":"ONE: the button hidden in a drawer. The one marked “Invisibility.” Convenient, that.","alt":"An open cockpit drawer reveals a special purple-and-yellow button.","labels":["Invisibility"]},
+      {"id":29,"wide":true,"caption":"TWO: one inflatable sumo wrestler costume. Large enough for all five Nerps: one in each limb, and one in the middle as the head.","alt":"A cutaway shows five Nerps packed into a single inflatable costume: one per arm, one per leg, and one in the head and torso."},
+      {"id":30,"caption":"THREE: a weapon well known on Flummoxprap—THE LASER GUN! Unfortunately, they had not had time to pack a laser gun.","alt":"A Nerp looks into an empty equipment case where the laser gun should have been."},
+      {"id":31,"caption":"So they settled for a foam-dart gun. Since they could only say “Nerp,” that became its name. The Nerp gun.","alt":"The Nerps present a blue-and-yellow toy gun with an orange tip and three blunt foam darts.","dialogue":[{"speaker":"Nerp","text":"Nerp."}]},
+      {"id":32,"wide":true,"caption":"Phase one: press the hidden button. Their enormous rock became a sneaky vehicle that nobody but the Nerps could see.","alt":"A sleeve presses the drawer button as the rock spaceship becomes an invisible outline above Earth.","labels":["Invisibility"]}
+    ]},
+    {"id":"japan","title":"Nothing unusual here","kicker":"Five aliens. One very bad disguise.","panels":[
+      {"id":33,"wide":true,"caption":"They landed their invisible rock on the roof of a 7-Eleven in Japan. An entirely ordinary place to park a gigantic rock.","alt":"An invisible rock, indicated by a dotted outline for the reader, settles on a Japanese 7-Eleven roof.","labels":["7-ELEVEN"]},
+      {"id":34,"caption":"Phase two: get five Nerps into one costume.","alt":"The five distinct Nerps stand on the roof beside one enormous empty inflatable costume."},
+      {"id":35,"caption":"This involved considerably more squishing than the plan had suggested.","alt":"Two Nerps struggle into the costume’s limbs while the other three wait.","dialogue":[{"speaker":"Nerp in a sleeve","text":"Nerp!"},{"speaker":"Nerp in a leg","text":"Nerp!!"},{"speaker":"Waiting Nerp","text":"Nerp?"}]},
+      {"id":36,"caption":"Eventually, after several painful “Nerps,” all five fitted. More or less.","alt":"Five cramped Nerps fill the costume, one in each limb and one in the center.","dialogue":[{"speaker":"Five cramped Nerps","text":"Nerp…"}]},
+      {"id":37,"caption":"They set off.","alt":"The inflated lumpy costume awkwardly squeezes through a rooftop stairway.","sfx":"squeeeak"},
+      {"id":38,"wide":true,"caption":"Their waddle was not remotely like a human walk. People stared. A great deal of the staring was deserved.","alt":"People in an ordinary Japanese shopping street give puzzled looks to the clumsy inflatable disguise.","sfx":"wobble · waddle · wobble"},
+      {"id":39,"caption":"Phase three: shoot anyone who discovered their true identity. They did not know a foam-dart gun could do little more than mildly annoy someone.","alt":"A hidden sleeve grips the colorful toy gun behind the inflatable costume."},
+      {"id":40,"caption":"Then they found an elevator. They decided to ride it up and down for fun. Even Nerps needed a hobby.","alt":"The lumpy costume approaches an elevator inside a city building."}
+    ]},
+    {"id":"elevator","title":"An impressive victory","kicker":"Or, possibly, his floor","panels":[
+      {"id":41,"wide":true,"caption":"An elderly man joined them. He could barely see, even with his glasses. As far as he could tell, he was sharing an elevator with a very large sumo wrestler.","alt":"The inflatable costume stands in an elevator beside an elderly man with thick glasses."},
+      {"id":42,"caption":"Up. Down. Up. Down. An excellent afternoon.","alt":"A Nerp’s sleeve reaches from the costume to press elevator buttons.","dialogue":[{"speaker":"Inside the costume","text":"Nerp!"}]},
+      {"id":43,"caption":"Until one head popped out.","alt":"The striped Nerp’s long-nosed hooded head accidentally protrudes from the inflatable costume.","dialogue":[{"speaker":"Exposed Nerp","text":"Nerp?!"}]},
+      {"id":44,"caption":"Phase three! A direct hit!",
+       "alt":"A soft orange foam dart gently bounces off the elderly man’s cardigan without hurting him.","sfx":"piff"},
+      {"id":45,"caption":"The man wondered what had just hit him. The Nerps wondered why he was still standing.","alt":"The elderly man peers in bewilderment through thick glasses at a harmless dart on the floor.","dialogue":[{"speaker":"Inside the costume","text":"Nerp?"}]},
+      {"id":46,"caption":"So they shot him again. And again. And again. He remained extremely un-defeated.","alt":"More soft foam darts bounce harmlessly off his cardigan and gather around his shoes.","sfx":"piff. piff. piff.","dialogue":[{"speaker":"Inside the costume","text":"Nerp! Nerp! Nerp!"}]},
+      {"id":47,"wide":true,"caption":"Eventually, the doors opened and the man got out.","alt":"The elderly passenger calmly leaves at his floor as the inflatable costume watches.","sfx":"ding"},
+      {"id":48,"caption":"Success! Perhaps he had been intimidated. But it was probably just his floor.","alt":"Alone in the elevator among scattered foam darts, the exposed Nerp looks perplexed and proud.","dialogue":[{"speaker":"Nerp","text":"Nerp."}]}
+    ]},
+    {"id":"house","title":"The perfect house","kicker":"An address with excellent warnings","panels":[
+      {"id":49,"caption":"By the time they left, it was getting late. The five Nerps still had nowhere to stay.","alt":"The five Nerps, out of their disguise, search a quiet street at nightfall."},
+      {"id":50,"wide":true,"caption":"Then they saw it. On a quiet street, right beneath a small bridge: the perfect house.","alt":"A small, abandoned, faded navy-blue house huddles beneath a bridge behind a chipped white fence."},
+      {"id":51,"caption":"Faded navy-blue paint. A rusty white fence with chipped paint. A little patch of dead grass. And a large, crooked sign.","alt":"The five Nerps admire the gloomy house and its crooked fence sign.","labels":["DO NOT TRESPASS"]},
+      {"id":52,"caption":"They straightened the sign. Such a lovely message deserved to hang properly.","alt":"Two Nerps carefully straighten the warning sign while the other three supervise.","labels":["DO NOT TRESPASS"],"dialogue":[{"speaker":"Satisfied Nerp","text":"Nerp."}]},
+      {"id":53,"caption":"From outside, you could see through the big front window only when something was very close to it.","alt":"Seen from outside, the cloudy front window barely reveals the sofa immediately behind it."},
+      {"id":54,"caption":"From inside, you could see everything outside perfectly. The Nerps already loved the house’s rustic, sad feel.","alt":"From inside the house, the street is clearly visible through the same window."},
+      {"id":55,"wide":true,"caption":"Then they saw the rest of the inside. It was HUGE. At least five times the size the outside had suggested.","alt":"The tiny five Nerps stand in an impossibly vast interior with a sofa beside the front window.","dialogue":[{"speaker":"Five impressed Nerps","text":"Nerp…"}]},
+      {"id":56,"caption":"One big sofa sat very close to the window. In the back-right corner, a dark doorway led to an enormous back room. The Nerps had an idea.","alt":"The five Nerps inspect the sofa by the window and a dark doorway in the back-right corner."}
+    ]},
+    {"id":"waiting","title":"The waiting room","kicker":"Ten seconds of very bad engineering","panels":[
+      {"id":57,"caption":"They huddled together and discussed it for a minute.","alt":"Exactly five gloomy Nerps huddle and point toward the dark back room.","dialogue":[{"speaker":"Nerp","text":"Nerp?"},{"speaker":"Nerp","text":"Nerp."},{"speaker":"Nerp","text":"Nerp!"}]},
+      {"id":58,"caption":"Then they built their masterpiece. It took about ten seconds.","alt":"All five Nerps assemble an enormous conveyor machine in a flurry of tools.","sfx":"clank · clonk · done"},
+      {"id":59,"wide":true,"caption":"A bin at the top, big enough for a whole human. A conveyor belt across the room. A table at the end for whatever came out.","alt":"The completed machine has an empty human-sized intake bin, a long conveyor, and an output table."},
+      {"id":60,"caption":"Their plan was simple and sinister: shoot anyone who trespassed until that person could no longer stand… or breathe. Then put the person into the machine.","alt":"The empty intake bin looms in shadow. There is no person in or near it."},
+      {"id":61,"caption":"Somehow, they expected a small brown cardboard box to come out. Inside it: one Nerp gun and three Nerp darts.","alt":"An open brown cardboard box on the output table contains one colorful toy gun and exactly three blunt orange foam darts."},
+      {"id":62,"caption":"The gun was still the same harmless foam-dart toy from the elevator. The Nerps’ intentions were another matter entirely.","alt":"The striped Nerp holds the harmless toy gun as the other four stand grimly beside the machine."},
+      {"id":63,"caption":"Satisfied with their work, the five returned to the front room. The sofa had space for them all.","alt":"The five distinct Nerps leave the dark workshop and approach the sofa beside the window."},
+      {"id":64,"wide":true,"caption":"And so the five Nerps sat together on the sofa… and waited for their first victim.","alt":"Exactly five gloomy Nerps sit in a row on one sofa directly behind the front window. No visitor comes. They wait in silence."}
+    ]}
+  ]
+}
