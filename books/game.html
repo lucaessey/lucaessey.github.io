@@ -6,7 +6,7 @@
   <title>Guess the Rock — From Yips to Nerps</title>
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg"><link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./game.css">
   <script type="module" src="./game-play.js"></script>
-</head>
+<!-- PWA:HEAD --><link rel="manifest" href="/books/manifest.webmanifest"><link rel="apple-touch-icon" href="/books/assets/icons/apple-touch-icon.png"><meta name="application-name" content="Luca’s Books"><meta name="apple-mobile-web-app-title" content="Luca’s Books"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><link rel="stylesheet" href="/books/pwa.css"><script type="module" src="/books/pwa.js"></script><!-- /PWA:HEAD --></head>
 <body class="game-page">
   <a class="skip-link" href="#game">Skip to game</a>
   <header class="masthead"><a class="wordmark" href="./index.html" aria-label="Luca’s Books home">L<span class="wordmark-slash">/</span>B</a><span class="masthead-note">A little game from Flummoxprap</span><a class="header-game" id="back-to-comic" href="./yips.html">Back to the Comic</a></header>
@@ -31,7 +31,7 @@
     </section>
     <div class="game-below"><label class="motion-option"><input type="checkbox" id="gentle-motion"> Gentler motion <span>Slower, level slides.</span></label><p>Five levels: very easy, easy, medium, hard, very hard.<br>A wrong guess? Retry the same level.</p></div>
     <p class="game-comic-link">Wondering why everyone lives under a rock? <a href="./yips.html#flummoxprap">Meet the Yips.</a> · <a href="./index.html">Back to the bookshelf</a></p>
-  </main>
+  <!-- PWA:PANEL --><section class="pwa-panel" aria-labelledby="pwa-title"><img class="pwa-symbol" src="/books/assets/icons/books-192.png" width="49" height="49" alt=""><div class="pwa-copy"><h2 id="pwa-title">Your bookshelf, anywhere.</h2><p id="offline-status" role="status" aria-live="polite">Open this page online to save both stories and the game for offline use.</p><details class="pwa-help" id="install-help"><summary>How to install</summary><p><strong>iPhone or iPad:</strong> open this site in Safari, tap Share, then Add to Home Screen.</p><p><strong>Android, Chrome or Edge:</strong> choose Install app or Add to Home Screen from the browser menu. On Mac Safari, choose File → Add to Dock.</p></details></div><div class="pwa-controls"><button type="button" id="install-app">Install app</button><button type="button" id="retry-offline" hidden>Retry offline download</button></div></section><div class="pwa-update" id="pwa-update" role="status" hidden><span>A new edition is ready. Reload the open book pages to update.</span><button type="button" id="update-app">Update now</button></div><!-- /PWA:PANEL --></main>
   <noscript><p class="noscript">Guess the Rock needs JavaScript. <a href="./transcript.html">Read the comic transcript instead.</a></p></noscript>
 </body>
 </html>

@@ -37,6 +37,17 @@ Earlier edition files are retained for recoverability and are not loaded by
 the current reader. The earlier edition is also preserved in Git history.
 Old chapter/game bookmarks remain supported.
 
+INSTALLABLE APP / OFFLINE READING
+manifest.webmanifest defines the app and restricts its scope to /books/.
+pwa.js and pwa.css provide install, offline-download, retry, and update controls.
+assets/icons/books.svg is the editable icon; the build generates all PNG sizes.
+The build generates sw.js from source/service-worker.js and the final site's
+content hashes. It precaches all pages, fonts, scripts, and story illustrations.
+Always run npm run build after editing so offline readers receive a new release.
+Readers choose Update now when an update is ready. Their reading place is kept.
+Only this app's lucas-books-v1- caches are cleaned; other projects are unaffected.
+Run npm run test:pwa for offline, installation, update, and cache-isolation checks.
+
 Run npm test and npm run build in the Books source workspace before publishing.
 Regenerate transcript.html with tools/build.mjs after editing story.js.
 Copy the contents of site/ into the publishing checkout's books/ directory.

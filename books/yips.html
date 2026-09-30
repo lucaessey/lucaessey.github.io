@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="preload" as="image" href="./assets/art/cover.webp">
   <script type="module" src="./reader.js"></script>
-</head>
+<!-- PWA:HEAD --><link rel="manifest" href="/books/manifest.webmanifest"><link rel="apple-touch-icon" href="/books/assets/icons/apple-touch-icon.png"><meta name="application-name" content="Luca’s Books"><meta name="apple-mobile-web-app-title" content="Luca’s Books"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><link rel="stylesheet" href="/books/pwa.css"><script type="module" src="/books/pwa.js"></script><!-- /PWA:HEAD --></head>
 <body>
   <a class="skip-link" href="#comic">Skip to the comic</a>
   <header class="masthead">
@@ -41,7 +41,7 @@
     <div id="comic" aria-label="The complete comic"></div>
     <div class="story-end"><p class="end-lettering">The end.</p><a class="button primary" href="./game.html">Play Guess the Rock</a><a class="button secondary" href="./bazooka.html">Read Three Shots & a Very Long Detour</a><a class="quiet-link" href="./index.html">Back to the bookshelf</a></div>
     <section class="transcript-section" id="transcript"><details><summary>Read the text transcript <span aria-hidden="true">+</span></summary><div id="transcript-text"></div></details></section>
-  </main>
+  <!-- PWA:PANEL --><section class="pwa-panel" aria-labelledby="pwa-title"><img class="pwa-symbol" src="/books/assets/icons/books-192.png" width="49" height="49" alt=""><div class="pwa-copy"><h2 id="pwa-title">Your bookshelf, anywhere.</h2><p id="offline-status" role="status" aria-live="polite">Open this page online to save both stories and the game for offline use.</p><details class="pwa-help" id="install-help"><summary>How to install</summary><p><strong>iPhone or iPad:</strong> open this site in Safari, tap Share, then Add to Home Screen.</p><p><strong>Android, Chrome or Edge:</strong> choose Install app or Add to Home Screen from the browser menu. On Mac Safari, choose File → Add to Dock.</p></details></div><div class="pwa-controls"><button type="button" id="install-app">Install app</button><button type="button" id="retry-offline" hidden>Retry offline download</button></div></section><div class="pwa-update" id="pwa-update" role="status" hidden><span>A new edition is ready. Reload the open book pages to update.</span><button type="button" id="update-app">Update now</button></div><!-- /PWA:PANEL --></main>
   <footer class="site-footer"><a href="./index.html">← Luca’s Books</a><span>Story by Luca · Original generated illustrations</span><a href="./game.html">Guess the Rock</a></footer>
   <dialog id="art-dialog" aria-labelledby="art-dialog-title"><div class="dialog-toolbar"><h2 id="art-dialog-title">Panel artwork</h2><button type="button" id="close-art" aria-label="Close enlarged artwork">Close ×</button></div><div id="enlarged-panel"></div><p class="dialog-hint">Use Escape to close.</p></dialog>
   <noscript><p class="noscript">Enable JavaScript to load the comic reader, or <a href="./transcript.html">read the full text transcript</a>.</p></noscript>
