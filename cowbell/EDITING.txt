@@ -1,0 +1,19 @@
+COWBELL
+Story by Luca. A standalone 24-panel illustrated horror comic.
+
+The complete comic, transcript, narration, speech, and inscription are in
+index.html as accessible editable HTML. reader.js adds saved reading,
+progress, scene navigation, and keyboard-accessible artwork enlargement.
+comic.css controls the presentation and panel layout.
+
+Six image sheets in assets/art each contain four scenes in a 2-by-2 grid.
+CSS selects the intended quadrant. The art was created with the built-in
+image-generation tool. Fonts are self-hosted with their included licenses.
+
+The complete source project is saved in Books/cowbell in the local workspace.
+Edit source/story.mjs, then run npm run build in that directory to regenerate
+this page. Original artwork and exact prompts are in artwork-output/cowbell.
+
+Publish this directory only to /cowbell/ in lucaessey/lucaessey.github.io.
+The Books website is a separate project. Cowbell needs no API keys, server,
+service worker, external runtime dependencies, or installation.
