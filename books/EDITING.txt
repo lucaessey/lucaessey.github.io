@@ -3,6 +3,9 @@ Two illustrated stories based on Luca's original work, plus Guess the Rock.
 
 THE BOOKSHELF
 index.html: homepage; hood card opens yips.html, bazooka card opens bazooka.html.
+The illustrated cowbell button opens the separate Cowbell story at /cowbell/.
+assets/art/cowbell-symbols.webp reuses the Cowbell sprite atlas; CSS displays
+its cowbell in the home button without changing the original artwork.
 yips.html: original From Yips to Nerps comic, unchanged story and 64 panels.
 bazooka.html: twelve-chapter expanded story, readable without JavaScript.
 library.css: homepage and long-form story layout.

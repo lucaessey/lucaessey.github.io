@@ -63,7 +63,7 @@ async function checkOffline() {
   } catch { offlineFailure(); }
 }
 function watchUpdate() {
-  updateNotice.hidden = !(registration.waiting && navigator.serviceWorker.controller);
+  updateNotice.hidden = !(registration?.waiting && navigator.serviceWorker.controller);
 }
 function watchInstalling(worker) {
   if (!worker) return;
