@@ -36,7 +36,7 @@ install.addEventListener('click', async () => {
 });
 
 function showOfflineStatus() {
-  if (offlineReady) status.textContent = navigator.onLine ? 'Both stories and the game are ready to use offline.' : 'You’re offline. Both stories and the game are ready.';
+  if (offlineReady) status.textContent = navigator.onLine ? 'Yips, Three Shots, Barnaby and Guess the Rock are ready to use offline.' : 'You’re offline. Yips, Three Shots, Barnaby and Guess the Rock are ready.';
 }
 function offlineFailure() {
   if (offlineReady) return;
@@ -81,7 +81,7 @@ async function registerOffline() {
   }
   starting = true;
   retry.hidden = true;
-  if (!offlineReady) status.textContent = 'Saving both stories and the game for offline use…';
+  if (!offlineReady) status.textContent = 'Saving Yips, Three Shots, Barnaby and Guess the Rock for offline use…';
   try {
     registration = await navigator.serviceWorker.register(new URL('./sw.js', import.meta.url), {scope:new URL('./', import.meta.url).href, updateViaCache:'none'});
     registration.addEventListener('updatefound', () => watchInstalling(registration.installing));

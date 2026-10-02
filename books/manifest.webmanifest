@@ -2,7 +2,7 @@
   "id": "/books/",
   "name": "Luca’s Books",
   "short_name": "Luca’s Books",
-  "description": "Two illustrated adventures and Guess the Rock, ready to read and play offline.",
+  "description": "Yips, Three Shots, Captain Barnaby and Guess the Rock, ready to read and play offline.",
   "lang": "en",
   "start_url": "/books/",
   "scope": "/books/",
@@ -16,6 +16,7 @@
     {"src": "./assets/icons/books-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
   ],
   "shortcuts": [
+    {"name": "Captain Barnaby & the Bloytoff", "short_name": "Barnaby", "url": "/books/barnaby.html", "description": "Read the 32-panel woodland comedy"},
     {"name": "From Yips to Nerps", "short_name": "Yips & Nerps", "url": "/books/yips.html", "description": "Read the original 64-panel comic"},
     {"name": "Three Shots & a Very Long Detour", "short_name": "Three Shots", "url": "/books/bazooka.html", "description": "Read the extended illustrated story"},
     {"name": "Guess the Rock", "url": "/books/game.html", "description": "Play all five levels"}

@@ -1,7 +1,43 @@
 // Build fills these tokens from the final website, including every illustration.
-const CACHE_NAME = 'lucas-books-v1-19c1b99b64afceac';
+const CACHE_NAME = 'lucas-books-v1-3f5c9b882762be07';
 const CACHE_PREFIX = 'lucas-books-v1-';
 const FILES = [
+  {
+    "url": "./assets/art/barnaby/cover.webp",
+    "integrity": "sha256-KUBTtheZVmq113nDLy7p75x0qMMCoeH6U0vUrHIW3q4="
+  },
+  {
+    "url": "./assets/art/barnaby/sheet-1.webp",
+    "integrity": "sha256-7NAMKX0V3KH3E/7W1xQLSyaQhvL6uIu9kyfLL/Pu1hw="
+  },
+  {
+    "url": "./assets/art/barnaby/sheet-2.webp",
+    "integrity": "sha256-zrZ82+Gi/uJ7iiz5J+3fRiD0i3lnQw4lWzpGTgfV4pE="
+  },
+  {
+    "url": "./assets/art/barnaby/sheet-3.webp",
+    "integrity": "sha256-lgs5U4mbP+lu5nT5MWIDU1Mc2E5AEyYAxbni18r3Acw="
+  },
+  {
+    "url": "./assets/art/barnaby/sheet-4.webp",
+    "integrity": "sha256-zFtOU+3iCMNTyRJgumAUV1YJ9qv15wNXWxG+PdV6c2g="
+  },
+  {
+    "url": "./assets/art/barnaby/sheet-5.webp",
+    "integrity": "sha256-Lm5ak0DoJVsrl1TukaMcjTtD3zFITsAkUsExut/p4ts="
+  },
+  {
+    "url": "./assets/art/barnaby/sheet-6.webp",
+    "integrity": "sha256-ERSbGVpXkRWkniEY5kd4FxCtHBAKhjfqqsy7B/QXVpE="
+  },
+  {
+    "url": "./assets/art/barnaby/sheet-7.webp",
+    "integrity": "sha256-6BUhV1NChjag42rBxolwVcsUdjhliVZ2B+8otUfSB5M="
+  },
+  {
+    "url": "./assets/art/barnaby/sheet-8.webp",
+    "integrity": "sha256-b7Hsos9ZW1Dp9V7CqhrRoal0zbEWPGxpxYa7TFhu1BE="
+  },
   {
     "url": "./assets/art/bazooka-icon.webp",
     "integrity": "sha256-pAeFmAu3vzBmKc0unqAUOUxi34v3pIieFqlYLPcM1oM="
@@ -143,8 +179,24 @@ const FILES = [
     "integrity": "sha256-4r3NS8jZ4XRWOhRaqdRrQ4Hg3tw9cY097QQI7eVqGbY="
   },
   {
+    "url": "./barnaby-transcript.html",
+    "integrity": "sha256-M8KwV7zyEgtrOyVqb+0q68fCJDq8ygGnx0X1dtlRlvk="
+  },
+  {
+    "url": "./barnaby.css",
+    "integrity": "sha256-9eUCD1j/N77oxic7qq+7BUABkigZgDspLnOkVqBedpg="
+  },
+  {
+    "url": "./barnaby.html",
+    "integrity": "sha256-DuPFipWuObrsqpk4/TSto7usIxK5hjeMTRJaqzl4kQU="
+  },
+  {
+    "url": "./barnaby.js",
+    "integrity": "sha256-ne20Yo/SOfu4QDODQOG8kDWqZ9MSjhCGo9az/NHXglo="
+  },
+  {
     "url": "./bazooka.html",
-    "integrity": "sha256-9fTHysrHaIv6FgLxFOEnAViYdqc7h/abzlRLz6RDk8s="
+    "integrity": "sha256-Xc/oAvy5lji4ojf6ehWYDiYtayFgiNLjsqrWPsxdlJ4="
   },
   {
     "url": "./book-reader.js",
@@ -168,27 +220,27 @@ const FILES = [
   },
   {
     "url": "./game.html",
-    "integrity": "sha256-eHLvWF/EkP4ZG+uZpENwgtuWHc2Onmv1hEcJaaIAcwc="
+    "integrity": "sha256-NLBGkdP1VbdIbhUB4r18mHg2wkHukKxIexdj/ev5oJs="
   },
   {
     "url": "./index.html",
-    "integrity": "sha256-A9p9XcKgDGH/teTbHTsQiibdmgfXOwnmPnDqOhhcob4="
+    "integrity": "sha256-khdQ4wCd0TeCgyF8Kr1E+K9lGl52ggaZ43cZfVSqsiQ="
   },
   {
     "url": "./library.css",
-    "integrity": "sha256-DkmGRerIR70EP8UYwRZB7DMOk3czJ011tsORwjfR/PY="
+    "integrity": "sha256-LuxJBPrCD9tPGXSZBbpVugdSSuZgiHeTIwm8MXuuH/M="
   },
   {
     "url": "./library.js",
-    "integrity": "sha256-c+B6bm+QfOwN4YQQpHxMh/ik1wjalB1v899swg1oda0="
+    "integrity": "sha256-1zoM2ZBwD+ffXFq2PE6JiPWtUGyfUV+CWiKlRtyfWvU="
   },
   {
     "url": "./manifest.webmanifest",
-    "integrity": "sha256-cEdr19UePf3ma1CJpAPPI313PLAhj53Ewa9y91v1Ng4="
+    "integrity": "sha256-+pTyqLpc0TOHaTGAwTkibBt+Fa0aGbqiUFiAGcAV0Ck="
   },
   {
     "url": "./offline.html",
-    "integrity": "sha256-LiDEqadK9g4dlG+zoSu4PeM+HyQionfLORAVBhwm0jE="
+    "integrity": "sha256-HjCU5bD1uqJWkIX4qwVSFp+9RN53Y/ZZJg8wi32rTfo="
   },
   {
     "url": "./pwa.css",
@@ -196,7 +248,7 @@ const FILES = [
   },
   {
     "url": "./pwa.js",
-    "integrity": "sha256-sjLJi4qGPFKbLqA23xicRpSnr1E05BKTE+6hP5D53G4="
+    "integrity": "sha256-sCck7N7t1hTQ/PuVj8OgJorX6BSQhLwhY/6FKCgijnw="
   },
   {
     "url": "./reader.js",
@@ -212,11 +264,11 @@ const FILES = [
   },
   {
     "url": "./transcript.html",
-    "integrity": "sha256-bezrQMxsFPN1ad+tsNnKTrVY9eIBJUiYhTO52frkpGY="
+    "integrity": "sha256-TWHZUA2OrwpNPu9HP54V5+3YHgPy0uH/q4+LOGa/j2A="
   },
   {
     "url": "./yips.html",
-    "integrity": "sha256-CC/TvATrkllP5GRMWWRpt41rHPjMdDw5m/9lVRJPuxk="
+    "integrity": "sha256-BTAXNivnPrHccLaEJeRG9UBewbswvL2u9gC4rAxZYUU="
   }
 ];
 const base = new URL('./', self.location.href);

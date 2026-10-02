@@ -62,3 +62,5 @@ SPUDVILLE
 The Spudville home-screen button links to the separate /spudville/ comic.
 Its thumbnail is assets/art/spudville-cover.webp. Its source and build are in
 the sibling spudville/ project. Preserve the ending credit to Kenneth Waldren JR.
+
+Captain Barnaby & the Bloytoff: barnaby.html is the 32-panel scrolling comic; barnaby-transcript.html includes all panel lettering, image descriptions and the original manuscript. Artwork is in assets/art/barnaby. The comic works without JavaScript; barnaby.js adds chapter progress, its own bookmark and keyboard-accessible enlarged panels. Offline files are included in the Books PWA.

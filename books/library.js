@@ -20,3 +20,14 @@ try {
     link.hidden = false;
   }
 } catch { /* Both stories remain available if device storage is disabled. */ }
+
+// Barnaby has a separate bookmark from the other stories.
+try {
+  const savedBarnaby = JSON.parse(localStorage.getItem('barnaby:reading:v1'));
+  const barnabyLink = document.querySelector('#resume-barnaby');
+  if (barnabyLink && Number.isInteger(savedBarnaby?.panel) && savedBarnaby.panel >= 1 && savedBarnaby.panel <= 32) {
+    barnabyLink.href = './barnaby.html#barnaby-panel-' + savedBarnaby.panel;
+    barnabyLink.textContent = 'Continue Barnaby · panel ' + savedBarnaby.panel + ' →';
+    barnabyLink.hidden = false;
+  }
+} catch { /* Storage is optional. */ }
