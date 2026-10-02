@@ -1,5 +1,5 @@
 // Build fills these tokens from the final website, including every illustration.
-const CACHE_NAME = 'lucas-books-v1-369d7005100117c7';
+const CACHE_NAME = 'lucas-books-v1-19c1b99b64afceac';
 const CACHE_PREFIX = 'lucas-books-v1-';
 const FILES = [
   {
@@ -107,6 +107,10 @@ const FILES = [
     "integrity": "sha256-XBATQs1lYUQYYvW/oX3KXfNK6Y+W20G77X+CI4U0gY8="
   },
   {
+    "url": "./assets/art/spudville-cover.webp",
+    "integrity": "sha256-52IFj84LOSPhFnn8Sgdim/8RLrnWHXl5sjXiXsVnUtM="
+  },
+  {
     "url": "./assets/bangers.ttf",
     "integrity": "sha256-pa0/BmWOzZJwXDSZzwAP9bDAxvSWQfezplMdzuS9tMA="
   },
@@ -168,11 +172,11 @@ const FILES = [
   },
   {
     "url": "./index.html",
-    "integrity": "sha256-8DcAD65IOVAAIMPoh3t0APwbLdqLlHyuXZCxle2HIH4="
+    "integrity": "sha256-A9p9XcKgDGH/teTbHTsQiibdmgfXOwnmPnDqOhhcob4="
   },
   {
     "url": "./library.css",
-    "integrity": "sha256-9PhQtQH2rGYLPR9hx4tKlsRB045EfcZQuxPC1J9+48I="
+    "integrity": "sha256-DkmGRerIR70EP8UYwRZB7DMOk3czJ011tsORwjfR/PY="
   },
   {
     "url": "./library.js",

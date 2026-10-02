@@ -56,4 +56,9 @@ Run npm run test:pwa for offline, installation, update, and cache-isolation chec
 Run npm test and npm run build in the Books source workspace before publishing.
 Regenerate transcript.html with tools/build.mjs after editing story.js.
 Copy the contents of site/ into the publishing checkout's books/ directory.
-Commit only books/ and push main. No hosted service or API key is required.
+Commit only the intended site folders and push main. No hosted service or API key is required.
+
+SPUDVILLE
+The Spudville home-screen button links to the separate /spudville/ comic.
+Its thumbnail is assets/art/spudville-cover.webp. Its source and build are in
+the sibling spudville/ project. Preserve the ending credit to Kenneth Waldren JR.
