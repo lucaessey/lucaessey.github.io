@@ -1,0 +1,17 @@
+THE FRIDAY I THOUGHT WAS GOOD — Story by Luca
+
+32 illustrated panels in eight chapters. The complete story and transcript
+are in index.html. Narration and dialogue remain editable, accessible HTML.
+reader.js adds saved reading, a chapter menu and artwork enlargement.
+comic.css contains the shared reading layout; friday.css styles this story.
+
+Each assets/art/sheet-01.webp through sheet-08.webp contains four scenes in
+a two-by-two grid. CSS displays the intended quadrant. The original art was
+made with the built-in image-generation tool; no story text is baked into it.
+
+The source project is in Books/friday. Edit source/story.mjs and run npm run
+build there. The supplied manuscript is preserved in source/original-story.txt.
+Original PNG illustrations and generation prompts are in artwork-output/friday.
+
+Publish only this directory to /friday/ in lucaessey/lucaessey.github.io.
+Its home-screen link is generated separately by Books/tools/build-library.mjs.

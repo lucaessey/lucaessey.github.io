@@ -1,5 +1,5 @@
 // Build fills these tokens from the final website, including every illustration.
-const CACHE_NAME = 'lucas-books-v1-0127a688db2837f1';
+const CACHE_NAME = 'lucas-books-v1-369d7005100117c7';
 const CACHE_PREFIX = 'lucas-books-v1-';
 const FILES = [
   {
@@ -29,6 +29,10 @@ const FILES = [
   {
     "url": "./assets/art/cowbell-symbols.webp",
     "integrity": "sha256-gfRYl5sg7uSV9qTOewTzVJt+EpwK2aQhCCDBbrfMMAQ="
+  },
+  {
+    "url": "./assets/art/friday-cover.webp",
+    "integrity": "sha256-Y92PWF7XnK5JjS0eQw4gcB236Zp0K0Allwkc8GZEP80="
   },
   {
     "url": "./assets/art/game-rock.webp",
@@ -164,11 +168,11 @@ const FILES = [
   },
   {
     "url": "./index.html",
-    "integrity": "sha256-8mdwui2ODtuGZe5NZzYuu75CuMlu/T78poAq60y0Fno="
+    "integrity": "sha256-8DcAD65IOVAAIMPoh3t0APwbLdqLlHyuXZCxle2HIH4="
   },
   {
     "url": "./library.css",
-    "integrity": "sha256-rJa2Biq6b2hbwNJKNQWZq52DR4wt20JCy95NBY5U704="
+    "integrity": "sha256-9PhQtQH2rGYLPR9hx4tKlsRB045EfcZQuxPC1J9+48I="
   },
   {
     "url": "./library.js",
