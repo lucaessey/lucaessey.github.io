@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101814">
+  <meta name="description" content="Carry the cursed cowbell through three farm crossings. Hide from the devil. Whatever you do, don't ring it. A free game inspired by Luca's Cowbell comic.">
+  <title>Don’t Ring It — The Cowbell Game</title>
+  <link rel="icon" href="./assets/favicon.svg"><link rel="stylesheet" href="./game.css">
+  <link rel="preload" href="./assets/art/game-sprites.webp" as="image">
+  <script type="module" src="./game.js"></script>
+</head>
+<body>
+  <a class="skip" href="#play">Skip to the game</a>
+  <header class="masthead"><a href="./" class="brand">COWBELL<span> / A story by Luca</span></a><a href="./">← Read the comic</a></header>
+  <main>
+    <div class="game-heading"><div><p class="eyebrow">The Cowbell game</p><h1>DON’T RING IT.</h1></div><p class="intro">Get through the farm.<br>Keep the bell quiet.</p></div>
+    <div class="game-layout" id="play">
+      <section class="play-area" aria-label="Farm crossing">
+        <div class="level-bar"><div><span id="level-number">01 / 03</span><h2 id="level-name">The barnyard</h2></div><button id="pause" type="button" disabled>Pause <kbd>P</kbd></button></div>
+        <div class="board-wrap" id="board-wrap" data-phase="ready">
+          <canvas id="farm" width="792" height="648" tabindex="0" role="img" aria-label="Farm game board. Use arrow keys or W A S D to move. Reach the green gate at the top right. Hay hides you; red tiles show the devil’s sight."></canvas>
+          <div id="overlay" class="overlay"><div class="overlay-card" role="group" aria-labelledby="overlay-title">
+            <p id="overlay-kicker" class="eyebrow">Three crossings. One cursed bell.</p>
+            <h2 id="overlay-title">A quiet way out.</h2>
+            <p id="overlay-copy">Reach the green gate. Move in short bursts, stop to settle the bell, and hide in hay when the devil passes.</p>
+            <p id="scare-note">Jump scares · Sound off by default</p>
+            <button id="primary" class="primary" type="button" disabled>Loading the farm…</button>
+          </div></div>
+          <div id="scare" class="scare" aria-hidden="true" hidden><img src="./assets/art/sheet-06.webp" alt=""><span>HE FOUND YOU.</span></div>
+        </div>
+        <div class="board-caption"><span id="position">You are the farmer with the bell.</span><span>GATE ↗</span></div>
+        <div class="mobile-controls" aria-label="Movement controls">
+          <div class="dpad"><button type="button" data-direction="up" aria-label="Move up">↑</button><button type="button" data-direction="left" aria-label="Move left">←</button><span aria-hidden="true">MOVE</span><button type="button" data-direction="right" aria-label="Move right">→</button><button type="button" data-direction="down" aria-label="Move down">↓</button></div>
+          <p>Hold to walk.<br>Release to settle.<small>Arrows / WASD also work.</small></p>
+        </div>
+      </section>
+      <aside class="field-notes" aria-label="Game status and controls">
+        <div class="meter-card"><div class="meter-heading"><label for="sway">Bell sway</label><span id="sway-number">0%</span></div><meter id="sway" min="0" max="100" low="50" high="75" optimum="0" value="0">0%</meter><p id="sway-tip">Still hands. Silent bell.</p><div class="watch"><span id="watch-label">Stay out of his sight</span><progress id="alert" max="1" value="0" aria-label="How close the devil is to spotting you"></progress></div></div>
+        <div class="how-to"><p class="eyebrow">Your way out</p><ol><li><b>Watch the red tiles.</b><span>That’s where he can see. Crates block his view.</span></li><li><b>Hide in the hay.</b><span>It conceals you, but don’t let him step on you.</span></li><li><b>Keep the bell below 100%.</b><span>Stop to settle it. Metal adds extra sway.</span></li></ol><div class="legend"><span><i class="hay"></i>Hay / cover</span><span><i class="metal"></i>Metal / noisy</span><span><i class="danger"></i>His sight</span><span><i class="gate"></i>Your exit</span></div></div>
+        <div class="options"><label><input id="sound" type="checkbox"> Sound <span id="sound-label">off</span></label><label><input id="gentle" type="checkbox"> Gentler scares</label><p>Gentler scares removes the sudden zoom. Sound is always your choice.</p><button id="restart" type="button">Restart from area 1</button></div>
+      </aside>
+    </div>
+    <p class="footnote">A challenge inspired by <a href="./">Cowbell</a>. The comic’s ending is waiting for you there.</p>
+    <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+    <noscript><p class="no-script">This game needs JavaScript. You can still <a href="./">read the complete illustrated comic</a>.</p></noscript>
+  </main>
+  <footer><span>Cowbell · Story by Luca</span><span>Step softly.</span></footer>
+</body>
+</html>

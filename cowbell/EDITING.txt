@@ -6,6 +6,12 @@ index.html as accessible editable HTML. reader.js adds saved reading,
 progress, scene navigation, and keyboard-accessible artwork enlargement.
 comic.css controls the presentation and panel layout.
 
+DON'T RING IT is the farm stealth game in game.html. game-engine.js owns the
+maps, patrol routes, bell sway and collision rules. game.js draws the board,
+handles keyboard/touch controls, pauses when hidden, and provides optional
+sound and gentler scares. game.css styles the game. The sprite atlas is
+assets/art/game-sprites.webp. The game is separate from the comic's ending.
+
 Six image sheets in assets/art each contain four scenes in a 2-by-2 grid.
 CSS selects the intended quadrant. The art was created with the built-in
 image-generation tool. Fonts are self-hosted with their included licenses.
