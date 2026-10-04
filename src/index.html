@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141414">
+  <meta name="description" content="Small games. Extra crispy. Play Phaser Snake, Wordventure, DFP, Boggle, Neon Pong, Untitled Card Game, and Coin Dodge at Deep Fried Pixels.">
+  <meta property="og:title" content="Deep Fried Pixels — Small games. Extra crispy.">
+  <meta property="og:description" content="An independent collection of browser games and playful projects. Pick something good and jump in.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://{{DOMAIN}}/">
+  <link rel="canonical" href="https://{{DOMAIN}}/">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+  <title>Deep Fried Pixels — Small games. Extra crispy.</title>
+</head>
+<body>
+  <a class="skip-link" href="#collection">Skip to games</a>
+  <header class="site-header wrap">
+    <a class="brand" href="/" aria-label="Deep Fried Pixels home">
+      <img src="/assets/favicon.svg" width="37" height="37" alt="">
+      <span>DEEP FRIED<br>PIXELS<span class="brand-dot">.</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#collection">The collection</a>
+      <a href="#about">About</a>
+      <a class="github-link" href="https://github.com/{{USERNAME}}" aria-label="Deep Fried Pixels on GitHub">GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.4a3 3 0 0 0-.8-2.3c2.7-.3 5.6-1.3 5.6-6A4.7 4.7 0 0 0 18.5 7a4.4 4.4 0 0 0-.1-3.3s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.6 3.4 5.6 3.7 5.6 3.7A4.4 4.4 0 0 0 5.5 7a4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.9 5.7 5.6 6A3 3 0 0 0 9 18.6V22"/></svg></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-pixel" aria-hidden="true"></span> Independent games &amp; curious creations</p>
+        <h1 id="hero-title">SMALL GAMES.<br><span>EXTRA CRISPY.</span></h1>
+        <p class="hero-description">A fresh batch of browser games, side projects,<br class="desktop-break"> and good old-fashioned “one more go.”</p>
+        <a class="button button-primary" href="#collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg> Find your next game</a>
+        <p class="hero-footnote">Made to play. Served right in your browser.</p>
+      </div>
+      <div class="hero-art">
+        <img src="/assets/hero-fries.png" alt="Golden pixel fries and a retro game controller" width="1536" height="1024" fetchpriority="high">
+        <span class="art-caption">100% pixels. Zero actual potatoes.</span>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="wrap"><span>FRESH FROM THE FRYER</span><b>✦</b><span>SMALL GAMES, BIG IDEAS</span><b>✦</b><span>JUST ONE MORE GO</span><b>✦</b><span>DEEP FRIED PIXELS</span></div></div>
+
+    <section class="collection wrap" id="collection" aria-labelledby="collection-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">The good stuff</p><h2 id="collection-title">PICK YOUR FLAVOR<span>.</span></h2></div>
+        <p>A few things I've been cooking up.</p>
+      </div>
+      <div class="collection-toolbar" id="collection-toolbar" hidden>
+        <div class="filters" role="group" aria-label="Filter the collection">
+          <button type="button" class="filter active" data-filter="all" aria-pressed="true">Everything <span>{{TOTAL}}</span></button>
+          <button type="button" class="filter" data-filter="game" aria-pressed="false">Games <span>{{GAMES}}</span></button>
+          <button type="button" class="filter" data-filter="project" aria-pressed="false">Projects <span>{{PROJECTS}}</span></button>
+        </div>
+        <p class="collection-count" id="collection-count" role="status" aria-live="polite">{{COUNT_LABEL}}</p>
+      </div>
+      <div class="game-grid" id="game-grid">{{CARDS}}</div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span class="eyebrow">Still in the kitchen</span>
+        <h3>Something else is cooking.</h3>
+        <p>New projects will land here. In the meantime, there's a game with your name on it.</p>
+        <button type="button" class="button button-outline" id="show-games">Browse the games</button>
+      </div>
+    </section>
+
+    <section class="about wrap" id="about" aria-labelledby="about-title">
+      <div><p class="eyebrow">A little about the kitchen</p><h2 id="about-title">BUILT FOR THE<br>FUN OF IT<span>.</span></h2></div>
+      <div class="about-copy"><p>Deep Fried Pixels is my little corner of the internet for games, experiments, and ideas that wouldn't leave me alone.</p><p>Some start with a familiar game. Others start with “what if?” They all end up here, ready for you to try.</p><a href="https://github.com/{{USERNAME}}" class="text-link">See what I'm working on</a></div>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><a class="footer-brand" href="/">DEEP FRIED PIXELS<span>.</span></a><p>Made with curiosity. Best enjoyed with a little free time.</p><a href="#hero-title">Back to top</a></footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{
+  "githubUsername": "lucaessey",
+  "domain": "www.deepfriedpixels.com",
+  "preserveDirectories": ["books", "cowbell", "friday", "logic-puzzle", "neon-pong", "spudville"],
+  "projects": [
+    {
+      "title": "Wordventure",
+      "slug": "wordventure",
+      "type": "game",
+      "genre": "Word puzzle",
+      "description": "A little wordplay. A whole lot of adventure. Find your next word in Normal, Infinite, or Adventure mode.",
+      "image": "wordventure.png",
+      "imageAlt": "Wordventure's green W game icon",
+      "theme": "word",
+      "note": "Three ways to play"
+    },
+    {
+      "title": "Phaser Snake",
+      "slug": "phaser-snake",
+      "type": "game",
+      "genre": "Arcade",
+      "description": "One more apple. One more turn. The familiar snake game, with plenty of reasons to chase a new high score.",
+      "image": "phaser-snake.png",
+      "imageAlt": "A blue snake winding across a bright green checkerboard",
+      "theme": "snake",
+      "note": "Chase your high score"
+    },
+    {
+      "title": "DFP: Deep Fried Pixels",
+      "slug": "DFP",
+      "type": "game",
+      "genre": "Restaurant sim",
+      "description": "A little restaurant. A big pixel-powered dream. Build and manage your own 3D restaurant empire.",
+      "image": "dfp.png",
+      "imageAlt": "Deep Fried Pixels game's cream controller on an orange background",
+      "theme": "orange",
+      "note": "Build your restaurant"
+    },
+    {
+      "title": "Boggle",
+      "slug": "Boggle",
+      "type": "game",
+      "genre": "Word puzzle",
+      "description": "Find the words hiding in the board, make every letter count, and see how far you can push your score.",
+      "image": "boggle.png",
+      "imageAlt": "Boggle's white B on a blue letter tile",
+      "theme": "blue",
+      "note": "Make every letter count"
+    },
+    {
+      "title": "Neon Pong",
+      "slug": "neon-pong",
+      "type": "game",
+      "genre": "Arcade",
+      "description": "The classic, after hours. Find your angle, take on the computer, and keep the rally alive.",
+      "image": "neon-pong.png",
+      "imageAlt": "Neon Pong's green and purple paddles with a ball between them",
+      "theme": "neon",
+      "note": "One more rally"
+    },
+    {
+      "title": "Untitled Card Game",
+      "slug": "card-game",
+      "type": "game",
+      "genre": "Card battler",
+      "description": "Unlikely heroes. Ridiculous evolutions. Collect cards, build your team, and take on the CPU.",
+      "image": "card-game.webp",
+      "imageAlt": "Game artwork of a fantastical goat with golf-club horns and a winding fairway tail",
+      "theme": "cards",
+      "note": "Collect. Evolve. Battle."
+    },
+    {
+      "title": "Coin Dodge",
+      "slug": "Coin-dodge",
+      "type": "game",
+      "genre": "Arcade",
+      "description": "Catch the gold. Dodge the red. Grab power-ups and chase your next high score in a little pocket arcade.",
+      "image": "coin-dodge.png",
+      "imageAlt": "Coin Dodge's golden coin above a mint-green basket",
+      "theme": "gold",
+      "note": "Catch a new high score"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "deep-fried-pixels",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The Deep Fried Pixels game and project launcher.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/build.mjs && node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "check:live": "node scripts/check-live.mjs"
+  }
+}
