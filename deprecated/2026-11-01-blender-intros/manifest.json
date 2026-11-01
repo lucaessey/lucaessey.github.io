@@ -1,0 +1,39 @@
+{
+  "reason": "Blender action introductions: preserve replaced public game files; old hashed assets and sibling sites remain in place.",
+  "changed": [
+    {
+      "path": "logic-puzzle/assets/index--0bYNgqJ.css",
+      "current": "e328eb0c079f0415d8dd820cd8bf9bb1f57e66eaf028ed89baf41b5b9bef1e65"
+    },
+    {
+      "path": "logic-puzzle/assets/index-D9y-QDGN.js",
+      "current": "758c48a7304a117fbc9d2e47dce36a6121be36e985e65118e1b7279959c11604"
+    },
+    {
+      "path": "logic-puzzle/assets/toy-stage-BB5J7WRJ.js",
+      "current": "42032bc52161a1a0c474ce173a91a71b97aee121cc53b981cf071b94b9e54386"
+    },
+    {
+      "path": "logic-puzzle/index.html",
+      "previous": "ffc04fd4aa8c23b22e0bfcb7d0eca87309053805c9e72761c945d1720eacedb5",
+      "current": "5cb4c83f6130f2cadea1a8bacaf7d5e70db6c80bb86bf3f0027f29d82a80a3bf"
+    },
+    {
+      "path": "logic-puzzle/intros/blender/murder-a12d9afcee03.mp4",
+      "current": "a12d9afcee03cc5141951833c73205e6537e69ddd7b7ce3200cbef9cdf072617"
+    },
+    {
+      "path": "logic-puzzle/intros/blender/robbery-29926700d9ec.mp4",
+      "current": "29926700d9ec0a53bfa71acb759c765b7695dbd07e67bbc8af811d0081853dba"
+    },
+    {
+      "path": "logic-puzzle/intros/blender/school-977bcf91506c.mp4",
+      "current": "977bcf91506c30c2d9ca65a2b828967147c1f2b630cc1a4c73620ef40743604b"
+    },
+    {
+      "path": "logic-puzzle/sw.js",
+      "previous": "60f81ff2cccc1a0fc395f1e3b415eaaa4919683909fe99e7b72490688de7508e",
+      "current": "56dbb43f496b590a9893a323c5d5f662931e5543346c233fa32db9377b65c500"
+    }
+  ]
+}
